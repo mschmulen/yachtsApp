@@ -1,0 +1,1129 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C91B69991E26C74D00B2CB9F /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B69921E26C74D00B2CB9F /* UserDetailViewController.swift */; };
+		C91B699A1E26C74D00B2CB9F /* UserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C91B69931E26C74D00B2CB9F /* UserDetailViewController.xib */; };
+		C91B699B1E26C74D00B2CB9F /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B69941E26C74D00B2CB9F /* UserTableViewCell.swift */; };
+		C91B699C1E26C74D00B2CB9F /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C91B69951E26C74D00B2CB9F /* UserTableViewCell.xib */; };
+		C91B699D1E26C74D00B2CB9F /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B69961E26C74D00B2CB9F /* UserViewController.swift */; };
+		C91B699E1E26C74D00B2CB9F /* UserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C91B69971E26C74D00B2CB9F /* UserViewController.xib */; };
+		C91B699F1E26C74D00B2CB9F /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B69981E26C74D00B2CB9F /* UserViewModel.swift */; };
+		C941D9311E254C6800C95990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941D9301E254C6800C95990 /* AppDelegate.swift */; };
+		C941D9331E254C6800C95990 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941D9321E254C6800C95990 /* ViewController.swift */; };
+		C941D9361E254C6800C95990 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C941D9341E254C6800C95990 /* Main.storyboard */; };
+		C941D9381E254C6800C95990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C941D9371E254C6800C95990 /* Assets.xcassets */; };
+		C941D93B1E254C6800C95990 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C941D9391E254C6800C95990 /* LaunchScreen.storyboard */; };
+		C941D9461E254C6800C95990 /* YachtsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941D9451E254C6800C95990 /* YachtsTests.swift */; };
+		C941D9511E254C6800C95990 /* YachtsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941D9501E254C6800C95990 /* YachtsUITests.swift */; };
+		C941D9691E2550F100C95990 /* TopNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941D9601E2550F100C95990 /* TopNavViewController.swift */; };
+		C941D96A1E2550F100C95990 /* YachtDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941D9621E2550F100C95990 /* YachtDetailViewController.swift */; };
+		C941D96B1E2550F100C95990 /* YachtDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C941D9631E2550F100C95990 /* YachtDetailViewController.xib */; };
+		C941D96C1E2550F100C95990 /* YachtTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941D9641E2550F100C95990 /* YachtTableViewCell.swift */; };
+		C941D96D1E2550F100C95990 /* YachtTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C941D9651E2550F100C95990 /* YachtTableViewCell.xib */; };
+		C941D96E1E2550F100C95990 /* YachtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941D9661E2550F100C95990 /* YachtViewController.swift */; };
+		C941D96F1E2550F100C95990 /* YachtViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C941D9671E2550F100C95990 /* YachtViewController.xib */; };
+		C941D9701E2550F100C95990 /* YachtViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941D9681E2550F100C95990 /* YachtViewModel.swift */; };
+		C941D9901E25517F00C95990 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C941D9871E25517400C95990 /* ReactiveSwift.framework */; };
+		C941D9911E25517F00C95990 /* ReactiveSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C941D9871E25517400C95990 /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C941D9C91E2551C200C95990 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C941D9BC1E2551BA00C95990 /* Alamofire.framework */; };
+		C941D9CA1E2551C200C95990 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C941D9BC1E2551BA00C95990 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C941D9CD1E2551CD00C95990 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C941D9A51E2551B200C95990 /* Result.framework */; };
+		C941D9CE1E2551CD00C95990 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C941D9A51E2551B200C95990 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C941D9D51E25522C00C95990 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941D9D31E25522C00C95990 /* UITableView+Reusable.swift */; };
+		C941D9D61E25522C00C95990 /* ViewDataObserving.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941D9D41E25522C00C95990 /* ViewDataObserving.swift */; };
+		C941D9D81E25524B00C95990 /* UserDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941D9D71E25524B00C95990 /* UserDataProvider.swift */; };
+		C941D9DA1E25526900C95990 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941D9D91E25526900C95990 /* DataProvider.swift */; };
+		C941D9FC1E2561E400C95990 /* UIView+getDataFromURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941D9FB1E2561E400C95990 /* UIView+getDataFromURL.swift */; };
+		C97D6BCF1E26DDEF0054C9FA /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97D6BCC1E26DDEF0054C9FA /* Identifiable.swift */; };
+		C97D6BD01E26DDEF0054C9FA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97D6BCD1E26DDEF0054C9FA /* User.swift */; };
+		C97D6BD11E26DDEF0054C9FA /* Yacht.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97D6BCE1E26DDEF0054C9FA /* Yacht.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C941D9421E254C6800C95990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C941D9251E254C6800C95990 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C941D92C1E254C6800C95990;
+			remoteInfo = Yachts;
+		};
+		C941D94D1E254C6800C95990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C941D9251E254C6800C95990 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C941D92C1E254C6800C95990;
+			remoteInfo = Yachts;
+		};
+		C941D9821E25517400C95990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C941D9781E25517300C95990 /* ReactiveSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D04725EA19E49ED7006002AA;
+			remoteInfo = "ReactiveSwift-macOS";
+		};
+		C941D9841E25517400C95990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C941D9781E25517300C95990 /* ReactiveSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D04725F519E49ED7006002AA;
+			remoteInfo = "ReactiveSwift-macOSTests";
+		};
+		C941D9861E25517400C95990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C941D9781E25517300C95990 /* ReactiveSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D047260C19E49F82006002AA;
+			remoteInfo = "ReactiveSwift-iOS";
+		};
+		C941D9881E25517400C95990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C941D9781E25517300C95990 /* ReactiveSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D047261619E49F82006002AA;
+			remoteInfo = "ReactiveSwift-iOSTests";
+		};
+		C941D98A1E25517400C95990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C941D9781E25517300C95990 /* ReactiveSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A9B315541B3940610001CB9C;
+			remoteInfo = "ReactiveSwift-watchOS";
+		};
+		C941D98C1E25517400C95990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C941D9781E25517300C95990 /* ReactiveSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 57A4D2411BA13D7A00F7D4B1;
+			remoteInfo = "ReactiveSwift-tvOS";
+		};
+		C941D98E1E25517400C95990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C941D9781E25517300C95990 /* ReactiveSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7DFBED031CDB8C9500EE435B;
+			remoteInfo = "ReactiveSwift-tvOSTests";
+		};
+		C941D9921E25517F00C95990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C941D9781E25517300C95990 /* ReactiveSwift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D047260B19E49F82006002AA;
+			remoteInfo = "ReactiveSwift-iOS";
+		};
+		C941D9A01E2551B200C95990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C941D9951E2551B200C95990 /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D45480571A9572F5009D7229;
+			remoteInfo = "Result-Mac";
+		};
+		C941D9A21E2551B200C95990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C941D9951E2551B200C95990 /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D45480671A9572F5009D7229;
+			remoteInfo = "Result-MacTests";
+		};
+		C941D9A41E2551B200C95990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C941D9951E2551B200C95990 /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D454807D1A957361009D7229;
+			remoteInfo = "Result-iOS";
+		};
+		C941D9A61E2551B200C95990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C941D9951E2551B200C95990 /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D45480871A957362009D7229;
+			remoteInfo = "Result-iOSTests";
+		};
+		C941D9A81E2551B200C95990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C941D9951E2551B200C95990 /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 57FCDE471BA280DC00130C48;
+			remoteInfo = "Result-tvOS";
+		};
+		C941D9AA1E2551B200C95990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C941D9951E2551B200C95990 /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 57FCDE541BA280E000130C48;
+			remoteInfo = "Result-tvOSTests";
+		};
+		C941D9AC1E2551B200C95990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C941D9951E2551B200C95990 /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D03579A31B2B788F005D26AE;
+			remoteInfo = "Result-watchOS";
+		};
+		C941D9AE1E2551B200C95990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C941D9951E2551B200C95990 /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D03579B01B2B78A1005D26AE;
+			remoteInfo = "Result-watchOSTests";
+		};
+		C941D9BB1E2551BA00C95990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C941D9B01E2551BA00C95990 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		C941D9BD1E2551BA00C95990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C941D9B01E2551BA00C95990 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		C941D9BF1E2551BA00C95990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C941D9B01E2551BA00C95990 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
+		C941D9C11E2551BA00C95990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C941D9B01E2551BA00C95990 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire macOS Tests";
+		};
+		C941D9C31E2551BA00C95990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C941D9B01E2551BA00C95990 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		C941D9C51E2551BA00C95990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C941D9B01E2551BA00C95990 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		C941D9C71E2551BA00C95990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C941D9B01E2551BA00C95990 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		C941D9CB1E2551C200C95990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C941D9B01E2551BA00C95990 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		C941D9CF1E2551CD00C95990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C941D9951E2551B200C95990 /* Result.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D454807C1A957361009D7229;
+			remoteInfo = "Result-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C941D9941E25517F00C95990 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C941D9CE1E2551CD00C95990 /* Result.framework in Embed Frameworks */,
+				C941D9911E25517F00C95990 /* ReactiveSwift.framework in Embed Frameworks */,
+				C941D9CA1E2551C200C95990 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C91B69921E26C74D00B2CB9F /* UserDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		C91B69931E26C74D00B2CB9F /* UserDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserDetailViewController.xib; sourceTree = "<group>"; };
+		C91B69941E26C74D00B2CB9F /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		C91B69951E26C74D00B2CB9F /* UserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		C91B69961E26C74D00B2CB9F /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		C91B69971E26C74D00B2CB9F /* UserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserViewController.xib; sourceTree = "<group>"; };
+		C91B69981E26C74D00B2CB9F /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		C941D92D1E254C6800C95990 /* Yachts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yachts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C941D9301E254C6800C95990 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C941D9321E254C6800C95990 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C941D9351E254C6800C95990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C941D9371E254C6800C95990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C941D93A1E254C6800C95990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C941D93C1E254C6800C95990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C941D9411E254C6800C95990 /* YachtsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YachtsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C941D9451E254C6800C95990 /* YachtsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YachtsTests.swift; sourceTree = "<group>"; };
+		C941D9471E254C6800C95990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C941D94C1E254C6800C95990 /* YachtsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YachtsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C941D9501E254C6800C95990 /* YachtsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YachtsUITests.swift; sourceTree = "<group>"; };
+		C941D9521E254C6800C95990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C941D9601E2550F100C95990 /* TopNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopNavViewController.swift; sourceTree = "<group>"; };
+		C941D9621E2550F100C95990 /* YachtDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YachtDetailViewController.swift; sourceTree = "<group>"; };
+		C941D9631E2550F100C95990 /* YachtDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YachtDetailViewController.xib; sourceTree = "<group>"; };
+		C941D9641E2550F100C95990 /* YachtTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YachtTableViewCell.swift; sourceTree = "<group>"; };
+		C941D9651E2550F100C95990 /* YachtTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YachtTableViewCell.xib; sourceTree = "<group>"; };
+		C941D9661E2550F100C95990 /* YachtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YachtViewController.swift; sourceTree = "<group>"; };
+		C941D9671E2550F100C95990 /* YachtViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YachtViewController.xib; sourceTree = "<group>"; };
+		C941D9681E2550F100C95990 /* YachtViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YachtViewModel.swift; sourceTree = "<group>"; };
+		C941D9781E25517300C95990 /* ReactiveSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveSwift.xcodeproj; path = Vendor/Carthage/Checkouts/ReactiveSwift/ReactiveSwift.xcodeproj; sourceTree = "<group>"; };
+		C941D9951E2551B200C95990 /* Result.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Result.xcodeproj; path = Vendor/Carthage/Checkouts/Result/Result.xcodeproj; sourceTree = "<group>"; };
+		C941D9B01E2551BA00C95990 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Vendor/Carthage/Checkouts/Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		C941D9D31E25522C00C95990 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		C941D9D41E25522C00C95990 /* ViewDataObserving.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDataObserving.swift; sourceTree = "<group>"; };
+		C941D9D71E25524B00C95990 /* UserDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataProvider.swift; sourceTree = "<group>"; };
+		C941D9D91E25526900C95990 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		C941D9FB1E2561E400C95990 /* UIView+getDataFromURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+getDataFromURL.swift"; sourceTree = "<group>"; };
+		C97D6BCC1E26DDEF0054C9FA /* Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Identifiable.swift; path = Vendor/Carthage/Checkouts/yachtsShare/Source/Identifiable.swift; sourceTree = "<group>"; };
+		C97D6BCD1E26DDEF0054C9FA /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Vendor/Carthage/Checkouts/yachtsShare/Source/User.swift; sourceTree = "<group>"; };
+		C97D6BCE1E26DDEF0054C9FA /* Yacht.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Yacht.swift; path = Vendor/Carthage/Checkouts/yachtsShare/Source/Yacht.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C941D92A1E254C6800C95990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C941D9CD1E2551CD00C95990 /* Result.framework in Frameworks */,
+				C941D9901E25517F00C95990 /* ReactiveSwift.framework in Frameworks */,
+				C941D9C91E2551C200C95990 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C941D93E1E254C6800C95990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C941D9491E254C6800C95990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C91B69911E26C74D00B2CB9F /* UserViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C91B69921E26C74D00B2CB9F /* UserDetailViewController.swift */,
+				C91B69931E26C74D00B2CB9F /* UserDetailViewController.xib */,
+				C91B69941E26C74D00B2CB9F /* UserTableViewCell.swift */,
+				C91B69951E26C74D00B2CB9F /* UserTableViewCell.xib */,
+				C91B69961E26C74D00B2CB9F /* UserViewController.swift */,
+				C91B69971E26C74D00B2CB9F /* UserViewController.xib */,
+				C91B69981E26C74D00B2CB9F /* UserViewModel.swift */,
+			);
+			path = UserViewController;
+			sourceTree = "<group>";
+		};
+		C941D9241E254C6800C95990 = {
+			isa = PBXGroup;
+			children = (
+				C941D9D11E2551E200C95990 /* Vendor */,
+				C941D92F1E254C6800C95990 /* Yachts */,
+				C941D9441E254C6800C95990 /* YachtsTests */,
+				C941D94F1E254C6800C95990 /* YachtsUITests */,
+				C941D92E1E254C6800C95990 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C941D92E1E254C6800C95990 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C941D92D1E254C6800C95990 /* Yachts.app */,
+				C941D9411E254C6800C95990 /* YachtsTests.xctest */,
+				C941D94C1E254C6800C95990 /* YachtsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C941D92F1E254C6800C95990 /* Yachts */ = {
+			isa = PBXGroup;
+			children = (
+				C941D9D21E25522C00C95990 /* Utils */,
+				C941D95E1E2550F100C95990 /* ViewControllers */,
+				C941D9301E254C6800C95990 /* AppDelegate.swift */,
+				C941D9321E254C6800C95990 /* ViewController.swift */,
+				C941D9341E254C6800C95990 /* Main.storyboard */,
+				C941D9371E254C6800C95990 /* Assets.xcassets */,
+				C941D9391E254C6800C95990 /* LaunchScreen.storyboard */,
+				C941D93C1E254C6800C95990 /* Info.plist */,
+			);
+			path = Yachts;
+			sourceTree = "<group>";
+		};
+		C941D9441E254C6800C95990 /* YachtsTests */ = {
+			isa = PBXGroup;
+			children = (
+				C941D9451E254C6800C95990 /* YachtsTests.swift */,
+				C941D9471E254C6800C95990 /* Info.plist */,
+			);
+			path = YachtsTests;
+			sourceTree = "<group>";
+		};
+		C941D94F1E254C6800C95990 /* YachtsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C941D9501E254C6800C95990 /* YachtsUITests.swift */,
+				C941D9521E254C6800C95990 /* Info.plist */,
+			);
+			path = YachtsUITests;
+			sourceTree = "<group>";
+		};
+		C941D95E1E2550F100C95990 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C91B69911E26C74D00B2CB9F /* UserViewController */,
+				C941D95F1E2550F100C95990 /* TopNavViewController */,
+				C941D9611E2550F100C95990 /* YachtViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C941D95F1E2550F100C95990 /* TopNavViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C941D9601E2550F100C95990 /* TopNavViewController.swift */,
+			);
+			path = TopNavViewController;
+			sourceTree = "<group>";
+		};
+		C941D9611E2550F100C95990 /* YachtViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C941D9621E2550F100C95990 /* YachtDetailViewController.swift */,
+				C941D9631E2550F100C95990 /* YachtDetailViewController.xib */,
+				C941D9641E2550F100C95990 /* YachtTableViewCell.swift */,
+				C941D9651E2550F100C95990 /* YachtTableViewCell.xib */,
+				C941D9661E2550F100C95990 /* YachtViewController.swift */,
+				C941D9671E2550F100C95990 /* YachtViewController.xib */,
+				C941D9681E2550F100C95990 /* YachtViewModel.swift */,
+			);
+			path = YachtViewController;
+			sourceTree = "<group>";
+		};
+		C941D9791E25517300C95990 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C941D9831E25517400C95990 /* ReactiveSwift.framework */,
+				C941D9851E25517400C95990 /* ReactiveSwiftTests.xctest */,
+				C941D9871E25517400C95990 /* ReactiveSwift.framework */,
+				C941D9891E25517400C95990 /* ReactiveSwiftTests.xctest */,
+				C941D98B1E25517400C95990 /* ReactiveSwift.framework */,
+				C941D98D1E25517400C95990 /* ReactiveSwift.framework */,
+				C941D98F1E25517400C95990 /* ReactiveSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C941D9961E2551B200C95990 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C941D9A11E2551B200C95990 /* Result.framework */,
+				C941D9A31E2551B200C95990 /* Result-MacTests.xctest */,
+				C941D9A51E2551B200C95990 /* Result.framework */,
+				C941D9A71E2551B200C95990 /* Result-iOSTests.xctest */,
+				C941D9A91E2551B200C95990 /* Result.framework */,
+				C941D9AB1E2551B200C95990 /* Result-tvOSTests.xctest */,
+				C941D9AD1E2551B200C95990 /* Result.framework */,
+				C941D9AF1E2551B200C95990 /* Result-watchOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C941D9B11E2551BA00C95990 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C941D9BC1E2551BA00C95990 /* Alamofire.framework */,
+				C941D9BE1E2551BA00C95990 /* Alamofire iOS Tests.xctest */,
+				C941D9C01E2551BA00C95990 /* Alamofire.framework */,
+				C941D9C21E2551BA00C95990 /* Alamofire macOS Tests.xctest */,
+				C941D9C41E2551BA00C95990 /* Alamofire.framework */,
+				C941D9C61E2551BA00C95990 /* Alamofire tvOS Tests.xctest */,
+				C941D9C81E2551BA00C95990 /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C941D9D11E2551E200C95990 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				C97D6BCB1E26DDB20054C9FA /* YachtsShare */,
+				C941D9B01E2551BA00C95990 /* Alamofire.xcodeproj */,
+				C941D9951E2551B200C95990 /* Result.xcodeproj */,
+				C941D9781E25517300C95990 /* ReactiveSwift.xcodeproj */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		C941D9D21E25522C00C95990 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C941D9D91E25526900C95990 /* DataProvider.swift */,
+				C941D9D71E25524B00C95990 /* UserDataProvider.swift */,
+				C941D9D31E25522C00C95990 /* UITableView+Reusable.swift */,
+				C941D9D41E25522C00C95990 /* ViewDataObserving.swift */,
+				C941D9FB1E2561E400C95990 /* UIView+getDataFromURL.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C97D6BCB1E26DDB20054C9FA /* YachtsShare */ = {
+			isa = PBXGroup;
+			children = (
+				C97D6BCC1E26DDEF0054C9FA /* Identifiable.swift */,
+				C97D6BCD1E26DDEF0054C9FA /* User.swift */,
+				C97D6BCE1E26DDEF0054C9FA /* Yacht.swift */,
+			);
+			name = YachtsShare;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C941D92C1E254C6800C95990 /* Yachts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C941D9551E254C6800C95990 /* Build configuration list for PBXNativeTarget "Yachts" */;
+			buildPhases = (
+				C941D9291E254C6800C95990 /* Sources */,
+				C941D92A1E254C6800C95990 /* Frameworks */,
+				C941D92B1E254C6800C95990 /* Resources */,
+				C941D9941E25517F00C95990 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C941D9931E25517F00C95990 /* PBXTargetDependency */,
+				C941D9CC1E2551C200C95990 /* PBXTargetDependency */,
+				C941D9D01E2551CD00C95990 /* PBXTargetDependency */,
+			);
+			name = Yachts;
+			productName = Yachts;
+			productReference = C941D92D1E254C6800C95990 /* Yachts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C941D9401E254C6800C95990 /* YachtsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C941D9581E254C6800C95990 /* Build configuration list for PBXNativeTarget "YachtsTests" */;
+			buildPhases = (
+				C941D93D1E254C6800C95990 /* Sources */,
+				C941D93E1E254C6800C95990 /* Frameworks */,
+				C941D93F1E254C6800C95990 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C941D9431E254C6800C95990 /* PBXTargetDependency */,
+			);
+			name = YachtsTests;
+			productName = YachtsTests;
+			productReference = C941D9411E254C6800C95990 /* YachtsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C941D94B1E254C6800C95990 /* YachtsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C941D95B1E254C6800C95990 /* Build configuration list for PBXNativeTarget "YachtsUITests" */;
+			buildPhases = (
+				C941D9481E254C6800C95990 /* Sources */,
+				C941D9491E254C6800C95990 /* Frameworks */,
+				C941D94A1E254C6800C95990 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C941D94E1E254C6800C95990 /* PBXTargetDependency */,
+			);
+			name = YachtsUITests;
+			productName = YachtsUITests;
+			productReference = C941D94C1E254C6800C95990 /* YachtsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C941D9251E254C6800C95990 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Matt Schmulen";
+				TargetAttributes = {
+					C941D92C1E254C6800C95990 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = GVE69PZWG4;
+						ProvisioningStyle = Automatic;
+					};
+					C941D9401E254C6800C95990 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = GVE69PZWG4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C941D92C1E254C6800C95990;
+					};
+					C941D94B1E254C6800C95990 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = GVE69PZWG4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C941D92C1E254C6800C95990;
+					};
+				};
+			};
+			buildConfigurationList = C941D9281E254C6800C95990 /* Build configuration list for PBXProject "Yachts" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C941D9241E254C6800C95990;
+			productRefGroup = C941D92E1E254C6800C95990 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C941D9B11E2551BA00C95990 /* Products */;
+					ProjectRef = C941D9B01E2551BA00C95990 /* Alamofire.xcodeproj */;
+				},
+				{
+					ProductGroup = C941D9791E25517300C95990 /* Products */;
+					ProjectRef = C941D9781E25517300C95990 /* ReactiveSwift.xcodeproj */;
+				},
+				{
+					ProductGroup = C941D9961E2551B200C95990 /* Products */;
+					ProjectRef = C941D9951E2551B200C95990 /* Result.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C941D92C1E254C6800C95990 /* Yachts */,
+				C941D9401E254C6800C95990 /* YachtsTests */,
+				C941D94B1E254C6800C95990 /* YachtsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C941D9831E25517400C95990 /* ReactiveSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveSwift.framework;
+			remoteRef = C941D9821E25517400C95990 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C941D9851E25517400C95990 /* ReactiveSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ReactiveSwiftTests.xctest;
+			remoteRef = C941D9841E25517400C95990 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C941D9871E25517400C95990 /* ReactiveSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveSwift.framework;
+			remoteRef = C941D9861E25517400C95990 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C941D9891E25517400C95990 /* ReactiveSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ReactiveSwiftTests.xctest;
+			remoteRef = C941D9881E25517400C95990 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C941D98B1E25517400C95990 /* ReactiveSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveSwift.framework;
+			remoteRef = C941D98A1E25517400C95990 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C941D98D1E25517400C95990 /* ReactiveSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveSwift.framework;
+			remoteRef = C941D98C1E25517400C95990 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C941D98F1E25517400C95990 /* ReactiveSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ReactiveSwiftTests.xctest;
+			remoteRef = C941D98E1E25517400C95990 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C941D9A11E2551B200C95990 /* Result.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Result.framework;
+			remoteRef = C941D9A01E2551B200C95990 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C941D9A31E2551B200C95990 /* Result-MacTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Result-MacTests.xctest";
+			remoteRef = C941D9A21E2551B200C95990 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C941D9A51E2551B200C95990 /* Result.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Result.framework;
+			remoteRef = C941D9A41E2551B200C95990 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C941D9A71E2551B200C95990 /* Result-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Result-iOSTests.xctest";
+			remoteRef = C941D9A61E2551B200C95990 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C941D9A91E2551B200C95990 /* Result.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Result.framework;
+			remoteRef = C941D9A81E2551B200C95990 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C941D9AB1E2551B200C95990 /* Result-tvOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Result-tvOSTests.xctest";
+			remoteRef = C941D9AA1E2551B200C95990 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C941D9AD1E2551B200C95990 /* Result.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Result.framework;
+			remoteRef = C941D9AC1E2551B200C95990 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C941D9AF1E2551B200C95990 /* Result-watchOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Result-watchOSTests.xctest";
+			remoteRef = C941D9AE1E2551B200C95990 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C941D9BC1E2551BA00C95990 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = C941D9BB1E2551BA00C95990 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C941D9BE1E2551BA00C95990 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = C941D9BD1E2551BA00C95990 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C941D9C01E2551BA00C95990 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = C941D9BF1E2551BA00C95990 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C941D9C21E2551BA00C95990 /* Alamofire macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire macOS Tests.xctest";
+			remoteRef = C941D9C11E2551BA00C95990 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C941D9C41E2551BA00C95990 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = C941D9C31E2551BA00C95990 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C941D9C61E2551BA00C95990 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = C941D9C51E2551BA00C95990 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C941D9C81E2551BA00C95990 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = C941D9C71E2551BA00C95990 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C941D92B1E254C6800C95990 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C91B699C1E26C74D00B2CB9F /* UserTableViewCell.xib in Resources */,
+				C91B699E1E26C74D00B2CB9F /* UserViewController.xib in Resources */,
+				C941D96D1E2550F100C95990 /* YachtTableViewCell.xib in Resources */,
+				C941D93B1E254C6800C95990 /* LaunchScreen.storyboard in Resources */,
+				C941D96F1E2550F100C95990 /* YachtViewController.xib in Resources */,
+				C941D96B1E2550F100C95990 /* YachtDetailViewController.xib in Resources */,
+				C941D9381E254C6800C95990 /* Assets.xcassets in Resources */,
+				C91B699A1E26C74D00B2CB9F /* UserDetailViewController.xib in Resources */,
+				C941D9361E254C6800C95990 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C941D93F1E254C6800C95990 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C941D94A1E254C6800C95990 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C941D9291E254C6800C95990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C97D6BCF1E26DDEF0054C9FA /* Identifiable.swift in Sources */,
+				C91B699D1E26C74D00B2CB9F /* UserViewController.swift in Sources */,
+				C941D9D61E25522C00C95990 /* ViewDataObserving.swift in Sources */,
+				C941D9FC1E2561E400C95990 /* UIView+getDataFromURL.swift in Sources */,
+				C941D96E1E2550F100C95990 /* YachtViewController.swift in Sources */,
+				C941D9331E254C6800C95990 /* ViewController.swift in Sources */,
+				C941D96A1E2550F100C95990 /* YachtDetailViewController.swift in Sources */,
+				C941D9691E2550F100C95990 /* TopNavViewController.swift in Sources */,
+				C941D9DA1E25526900C95990 /* DataProvider.swift in Sources */,
+				C941D9D81E25524B00C95990 /* UserDataProvider.swift in Sources */,
+				C91B69991E26C74D00B2CB9F /* UserDetailViewController.swift in Sources */,
+				C941D9D51E25522C00C95990 /* UITableView+Reusable.swift in Sources */,
+				C91B699F1E26C74D00B2CB9F /* UserViewModel.swift in Sources */,
+				C941D9311E254C6800C95990 /* AppDelegate.swift in Sources */,
+				C97D6BD01E26DDEF0054C9FA /* User.swift in Sources */,
+				C97D6BD11E26DDEF0054C9FA /* Yacht.swift in Sources */,
+				C941D96C1E2550F100C95990 /* YachtTableViewCell.swift in Sources */,
+				C941D9701E2550F100C95990 /* YachtViewModel.swift in Sources */,
+				C91B699B1E26C74D00B2CB9F /* UserTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C941D93D1E254C6800C95990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C941D9461E254C6800C95990 /* YachtsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C941D9481E254C6800C95990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C941D9511E254C6800C95990 /* YachtsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C941D9431E254C6800C95990 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C941D92C1E254C6800C95990 /* Yachts */;
+			targetProxy = C941D9421E254C6800C95990 /* PBXContainerItemProxy */;
+		};
+		C941D94E1E254C6800C95990 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C941D92C1E254C6800C95990 /* Yachts */;
+			targetProxy = C941D94D1E254C6800C95990 /* PBXContainerItemProxy */;
+		};
+		C941D9931E25517F00C95990 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ReactiveSwift-iOS";
+			targetProxy = C941D9921E25517F00C95990 /* PBXContainerItemProxy */;
+		};
+		C941D9CC1E2551C200C95990 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = C941D9CB1E2551C200C95990 /* PBXContainerItemProxy */;
+		};
+		C941D9D01E2551CD00C95990 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Result-iOS";
+			targetProxy = C941D9CF1E2551CD00C95990 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C941D9341E254C6800C95990 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C941D9351E254C6800C95990 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C941D9391E254C6800C95990 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C941D93A1E254C6800C95990 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C941D9531E254C6800C95990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C941D9541E254C6800C95990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C941D9561E254C6800C95990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GVE69PZWG4;
+				INFOPLIST_FILE = Yachts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Yachts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C941D9571E254C6800C95990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GVE69PZWG4;
+				INFOPLIST_FILE = Yachts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Yachts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C941D9591E254C6800C95990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GVE69PZWG4;
+				INFOPLIST_FILE = YachtsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YachtsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yachts.app/Yachts";
+			};
+			name = Debug;
+		};
+		C941D95A1E254C6800C95990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GVE69PZWG4;
+				INFOPLIST_FILE = YachtsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YachtsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yachts.app/Yachts";
+			};
+			name = Release;
+		};
+		C941D95C1E254C6800C95990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = GVE69PZWG4;
+				INFOPLIST_FILE = YachtsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YachtsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Yachts;
+			};
+			name = Debug;
+		};
+		C941D95D1E254C6800C95990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = GVE69PZWG4;
+				INFOPLIST_FILE = YachtsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YachtsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Yachts;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C941D9281E254C6800C95990 /* Build configuration list for PBXProject "Yachts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C941D9531E254C6800C95990 /* Debug */,
+				C941D9541E254C6800C95990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C941D9551E254C6800C95990 /* Build configuration list for PBXNativeTarget "Yachts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C941D9561E254C6800C95990 /* Debug */,
+				C941D9571E254C6800C95990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C941D9581E254C6800C95990 /* Build configuration list for PBXNativeTarget "YachtsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C941D9591E254C6800C95990 /* Debug */,
+				C941D95A1E254C6800C95990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C941D95B1E254C6800C95990 /* Build configuration list for PBXNativeTarget "YachtsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C941D95C1E254C6800C95990 /* Debug */,
+				C941D95D1E254C6800C95990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C941D9251E254C6800C95990 /* Project object */;
+}
