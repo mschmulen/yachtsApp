@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   let currentUserId:Identifier = "123"
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-
+    
     let topNav = TopNavViewController(userID: currentUserId)
     window?.rootViewController = topNav
 

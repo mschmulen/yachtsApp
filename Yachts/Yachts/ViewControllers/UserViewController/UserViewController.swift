@@ -32,7 +32,7 @@ public struct UserRowViewData : ViewDataProtocol {
 class UserViewController: UIViewController , ViewDataObserving {
 
   var updateSearch: ((String) -> Void)?
-  var selectYachtWith: ((Identifier) -> Void)?
+  var selectUserWith: ((Identifier) -> Void)?
   var refresh: (()->Void)?
 
   @IBOutlet weak var tableView: UITableView!
@@ -81,14 +81,14 @@ class UserViewController: UIViewController , ViewDataObserving {
     tableView.delegate = self
 
     tableView.register (
-      UINib(nibName: cellNibName, bundle: Bundle(for: YachtViewController.self)),
+      UINib(nibName: cellNibName, bundle: Bundle(for: UserViewController.self)),
       forCellReuseIdentifier: cellReuseIdentifier
     )
 
-    tableView.rowHeight = YachtTableViewCell.rowHeight
+    tableView.rowHeight = UserTableViewCell.rowHeight
     
     refreshControl = UIRefreshControl()
-    refreshControl.addTarget(self, action: #selector(YachtViewController.pullToRefresh), for: UIControlEvents.valueChanged)
+    refreshControl.addTarget(self, action: #selector(UserViewController.pullToRefresh), for: UIControlEvents.valueChanged)
     tableView.addSubview(refreshControl)
     tableView.reloadData()
 
@@ -163,7 +163,7 @@ extension UserViewController {
     vc.updateSearch = { searchString in
       vm.fetch(searchString: searchString)
     }
-    vc.selectYachtWith = { id in
+    vc.selectUserWith = { id in
       print( " id\(id)")
     }
     vc.refresh = {
