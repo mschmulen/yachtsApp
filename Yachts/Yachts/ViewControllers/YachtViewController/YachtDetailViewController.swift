@@ -40,7 +40,7 @@ class YachtDetailViewController: UIViewController {
 
   public convenience init(model:YachtRowViewData)
   {
-    self.init(nibName: "YachtDetalViewController", bundle: Bundle(for: YachtDetailViewController.self), model:model )
+    self.init(nibName: "YachtDetailViewController", bundle: Bundle(for: YachtDetailViewController.self), model:model )
   }
 }
 
