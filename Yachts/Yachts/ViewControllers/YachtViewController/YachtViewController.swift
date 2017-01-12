@@ -3,7 +3,7 @@ import UIKit
 import ReactiveSwift
 import Result
 
-public struct YachtViewData : ViewDataProtocol {
+public struct YachtViewData : UIViewDataProtocol {
   var title:String
   let list:[YachtRowViewData]
   
@@ -12,7 +12,7 @@ public struct YachtViewData : ViewDataProtocol {
   }
 }
 
-public struct YachtRowViewData : ViewDataProtocol {
+public struct YachtRowViewData : UIViewDataProtocol {
 
   let title:String
   let imageURL:URL
@@ -29,7 +29,7 @@ public struct YachtRowViewData : ViewDataProtocol {
   }
 }
 
-class YachtViewController: UIViewController , ViewDataObserving {
+class YachtViewController: UIViewController , UIViewDataObserving {
 
   var updateSearch: ((String) -> Void)?
   var selectYachtWith: ((Identifier) -> Void)?
@@ -59,6 +59,24 @@ class YachtViewController: UIViewController , ViewDataObserving {
     self.title = viewData.value.title
     tableView.reloadData()
     self.refreshControl.endRefreshing()
+  }
+
+  func addTapped() {
+
+    let vc = YachtNewViewController()
+    vc.save = { model in
+      print( "save: \(model.name) ")
+//      vm.new( model )
+    }
+
+    if let nav = self.navigationController {
+      nav.pushViewController(vc, animated: true)
+    }
+    else
+    {
+      self.present(vc, animated: true, completion: nil)
+    }
+
   }
 
   func pullToRefresh()
@@ -92,6 +110,11 @@ class YachtViewController: UIViewController , ViewDataObserving {
   // MARK: - LifeCycle
   override func viewDidLoad() {
     super.viewDidLoad()
+
+    //add button
+    let add = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(YachtViewController.addTapped))
+    navigationItem.rightBarButtonItems = [add]
+
 
     //configure the tableview
     tableView.dataSource = self
@@ -147,7 +170,6 @@ extension YachtViewController : UITableViewDataSource {
   }
 
   public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
     let cell: YachtTableViewCell = tableView.dequeueReusableCell(indexPath: indexPath)
     let record = viewData.value.list[indexPath.item]
     cell.loadItem( record )
@@ -159,7 +181,7 @@ extension YachtViewController : UITableViewDataSource {
 extension YachtViewController : UITableViewDelegate {
 
   public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    let vc = YachtDetailViewController(data: viewData.value.list[indexPath.item] )
+    let vc = YachtDetailViewController(model: viewData.value.list[indexPath.item] )
     if let nav = self.navigationController {
       nav.pushViewController(vc, animated: true)
     }
@@ -173,7 +195,6 @@ extension YachtViewController : UITableViewDelegate {
 extension YachtViewController {
 
   public static func factoryNav(searchEnabled:Bool = true) -> UINavigationController {
-
     let title = "Yachts"
     let vm = YachtViewModel()
     let vc = YachtViewController()

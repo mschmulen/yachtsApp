@@ -3,7 +3,7 @@ import UIKit
 import ReactiveSwift
 import Result
 
-public struct UserViewData : ViewDataProtocol {
+public struct UserViewData : UIViewDataProtocol {
   var title:String
   let list:[UserRowViewData]
   
@@ -12,7 +12,7 @@ public struct UserViewData : ViewDataProtocol {
   }
 }
 
-public struct UserRowViewData : ViewDataProtocol {
+public struct UserRowViewData : UIViewDataProtocol {
 
   let title:String
   let imageURL:URL
@@ -29,7 +29,7 @@ public struct UserRowViewData : ViewDataProtocol {
   }
 }
 
-class UserViewController: UIViewController , ViewDataObserving {
+class UserViewController: UIViewController , UIViewDataObserving {
 
   var updateSearch: ((String) -> Void)?
   var selectUserWith: ((Identifier) -> Void)?

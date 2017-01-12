@@ -7,7 +7,6 @@ open class TopNavViewController: UITabBarController {
 
   let userID:Identifier?
 
-  // MARK: - VC Lifecyle
   override open func viewDidLoad() {
     super.viewDidLoad()
   }
@@ -20,7 +19,6 @@ open class TopNavViewController: UITabBarController {
     super.viewWillAppear(animated)
   }
 
-  // MARK: – init
   required public init(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }

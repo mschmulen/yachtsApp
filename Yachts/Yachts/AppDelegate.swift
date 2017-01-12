@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  Yachts
-//
-//  Created by Matt Schmulen on 1/10/17.
-//  Copyright © 2017 Matt Schmulen. All rights reserved.
-//
 
 import UIKit
 
@@ -12,8 +5,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
-
-  let userProvider = UserDataProvider()
+  
   let currentUserId:Identifier = "123"
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {

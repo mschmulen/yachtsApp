@@ -29,19 +29,18 @@ class YachtDetailViewController: UIViewController {
     super.didReceiveMemoryWarning()
   }
 
-  // MARK: - init
   required public init(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
 
-  public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?, data:YachtRowViewData) {
-    self.model = data
+  public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?, model:YachtRowViewData) {
+    self.model = model
     super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
   }
 
-  public convenience init( data:YachtRowViewData)
+  public convenience init(model:YachtRowViewData)
   {
-    self.init(nibName: "YachtDetailViewController", bundle: Bundle(for: YachtDetailViewController.self), data:data )
+    self.init(nibName: "YachtDetalViewController", bundle: Bundle(for: YachtDetailViewController.self), model:model )
   }
 }
 

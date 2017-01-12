@@ -36,13 +36,15 @@
 		C941D9CD1E2551CD00C95990 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C941D9A51E2551B200C95990 /* Result.framework */; };
 		C941D9CE1E2551CD00C95990 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C941D9A51E2551B200C95990 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C941D9D51E25522C00C95990 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941D9D31E25522C00C95990 /* UITableView+Reusable.swift */; };
-		C941D9D61E25522C00C95990 /* ViewDataObserving.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941D9D41E25522C00C95990 /* ViewDataObserving.swift */; };
+		C941D9D61E25522C00C95990 /* UIViewDataObserving.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941D9D41E25522C00C95990 /* UIViewDataObserving.swift */; };
 		C941D9D81E25524B00C95990 /* UserDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941D9D71E25524B00C95990 /* UserDataProvider.swift */; };
 		C941D9DA1E25526900C95990 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941D9D91E25526900C95990 /* DataProvider.swift */; };
 		C941D9FC1E2561E400C95990 /* UIView+getDataFromURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941D9FB1E2561E400C95990 /* UIView+getDataFromURL.swift */; };
 		C9DD43981E26EDFB009F7078 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DD43951E26EDFB009F7078 /* Identifiable.swift */; };
 		C9DD43991E26EDFB009F7078 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DD43961E26EDFB009F7078 /* User.swift */; };
 		C9DD439A1E26EDFB009F7078 /* Yacht.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DD43971E26EDFB009F7078 /* Yacht.swift */; };
+		C9DD45231E27EA06009F7078 /* YachtNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DD45211E27EA06009F7078 /* YachtNewViewController.swift */; };
+		C9DD45241E27EA06009F7078 /* YachtNewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9DD45221E27EA06009F7078 /* YachtNewViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -286,13 +288,15 @@
 		C941D9951E2551B200C95990 /* Result.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Result.xcodeproj; path = Vendor/Carthage/Checkouts/Result/Result.xcodeproj; sourceTree = "<group>"; };
 		C941D9B01E2551BA00C95990 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Vendor/Carthage/Checkouts/Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		C941D9D31E25522C00C95990 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
-		C941D9D41E25522C00C95990 /* ViewDataObserving.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDataObserving.swift; sourceTree = "<group>"; };
+		C941D9D41E25522C00C95990 /* UIViewDataObserving.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewDataObserving.swift; sourceTree = "<group>"; };
 		C941D9D71E25524B00C95990 /* UserDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataProvider.swift; sourceTree = "<group>"; };
 		C941D9D91E25526900C95990 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		C941D9FB1E2561E400C95990 /* UIView+getDataFromURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+getDataFromURL.swift"; sourceTree = "<group>"; };
 		C9DD43951E26EDFB009F7078 /* Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Identifiable.swift; path = Vendor/Carthage/Checkouts/yachtsShare/Sources/Identifiable.swift; sourceTree = "<group>"; };
 		C9DD43961E26EDFB009F7078 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Vendor/Carthage/Checkouts/yachtsShare/Sources/User.swift; sourceTree = "<group>"; };
 		C9DD43971E26EDFB009F7078 /* Yacht.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Yacht.swift; path = Vendor/Carthage/Checkouts/yachtsShare/Sources/Yacht.swift; sourceTree = "<group>"; };
+		C9DD45211E27EA06009F7078 /* YachtNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YachtNewViewController.swift; sourceTree = "<group>"; };
+		C9DD45221E27EA06009F7078 /* YachtNewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YachtNewViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -412,6 +416,8 @@
 		C941D9611E2550F100C95990 /* YachtViewController */ = {
 			isa = PBXGroup;
 			children = (
+				C9DD45211E27EA06009F7078 /* YachtNewViewController.swift */,
+				C9DD45221E27EA06009F7078 /* YachtNewViewController.xib */,
 				C941D9621E2550F100C95990 /* YachtDetailViewController.swift */,
 				C941D9631E2550F100C95990 /* YachtDetailViewController.xib */,
 				C941D9641E2550F100C95990 /* YachtTableViewCell.swift */,
@@ -483,7 +489,7 @@
 				C941D9D91E25526900C95990 /* DataProvider.swift */,
 				C941D9D71E25524B00C95990 /* UserDataProvider.swift */,
 				C941D9D31E25522C00C95990 /* UITableView+Reusable.swift */,
-				C941D9D41E25522C00C95990 /* ViewDataObserving.swift */,
+				C941D9D41E25522C00C95990 /* UIViewDataObserving.swift */,
 				C941D9FB1E2561E400C95990 /* UIView+getDataFromURL.swift */,
 			);
 			path = Utils;
@@ -791,6 +797,7 @@
 				C941D96F1E2550F100C95990 /* YachtViewController.xib in Resources */,
 				C941D96B1E2550F100C95990 /* YachtDetailViewController.xib in Resources */,
 				C941D9381E254C6800C95990 /* Assets.xcassets in Resources */,
+				C9DD45241E27EA06009F7078 /* YachtNewViewController.xib in Resources */,
 				C91B699A1E26C74D00B2CB9F /* UserDetailViewController.xib in Resources */,
 				C941D9361E254C6800C95990 /* Main.storyboard in Resources */,
 			);
@@ -819,7 +826,7 @@
 			files = (
 				C9DD43981E26EDFB009F7078 /* Identifiable.swift in Sources */,
 				C91B699D1E26C74D00B2CB9F /* UserViewController.swift in Sources */,
-				C941D9D61E25522C00C95990 /* ViewDataObserving.swift in Sources */,
+				C941D9D61E25522C00C95990 /* UIViewDataObserving.swift in Sources */,
 				C941D9FC1E2561E400C95990 /* UIView+getDataFromURL.swift in Sources */,
 				C941D96E1E2550F100C95990 /* YachtViewController.swift in Sources */,
 				C941D9331E254C6800C95990 /* ViewController.swift in Sources */,
@@ -834,6 +841,7 @@
 				C9DD43991E26EDFB009F7078 /* User.swift in Sources */,
 				C9DD439A1E26EDFB009F7078 /* Yacht.swift in Sources */,
 				C941D96C1E2550F100C95990 /* YachtTableViewCell.swift in Sources */,
+				C9DD45231E27EA06009F7078 /* YachtNewViewController.swift in Sources */,
 				C941D9701E2550F100C95990 /* YachtViewModel.swift in Sources */,
 				C91B699B1E26C74D00B2CB9F /* UserTableViewCell.swift in Sources */,
 			);

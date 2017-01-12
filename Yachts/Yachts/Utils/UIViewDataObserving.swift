@@ -2,31 +2,31 @@
 import ReactiveSwift
 import enum Result.NoError
 
-protocol ViewDataProtocol {
+protocol UIViewDataProtocol {
   static var empty: Self { get }
 }
 
-extension Optional: ViewDataProtocol {
+extension Optional: UIViewDataProtocol {
   static var empty: Optional {
     return .none
   }
 }
 
-extension Array: ViewDataProtocol {
+extension Array: UIViewDataProtocol {
   static var empty: Array {
     return []
   }
 }
 
-protocol ViewDataObserving: class {
-  associatedtype ViewData: ViewDataProtocol
+protocol UIViewDataObserving: class {
+  associatedtype ViewData: UIViewDataProtocol
 
   var viewData: MutableProperty<ViewData> { get }
 
   func viewDataDidChange(from old: ViewData, to new: ViewData)
 }
 
-extension ViewDataObserving {
+extension UIViewDataObserving {
 
   func observe<P: PropertyProtocol>(_ viewData: P) where P.Value == ViewData {
     self.viewData <~ viewData
