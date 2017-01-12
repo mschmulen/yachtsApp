@@ -58,14 +58,15 @@ class YachtViewController: UIViewController , ViewDataObserving {
   func viewDataDidChange(from old: YachtViewData, to new: YachtViewData) {
     self.title = viewData.value.title
     tableView.reloadData()
+    self.refreshControl.endRefreshing()
   }
 
   func pullToRefresh()
   {
     self.refreshControl.beginRefreshing()
+    refresh?()
     self.refreshControl.endRefreshing()
   }
-
 
   func actionSearch() {
     updateSearch?("")
@@ -102,6 +103,10 @@ class YachtViewController: UIViewController , ViewDataObserving {
     )
 
     tableView.rowHeight = YachtTableViewCell.rowHeight
+
+    refreshControl = UIRefreshControl()
+    refreshControl.addTarget(self, action: #selector(YachtViewController.pullToRefresh), for: UIControlEvents.valueChanged)
+    tableView.addSubview(refreshControl)
     tableView.reloadData()
 
     updateSearch?("")
@@ -109,7 +114,7 @@ class YachtViewController: UIViewController , ViewDataObserving {
 
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
-    refresh?()
+    //refresh?()
   }
 
   override func viewWillAppear(_ animated: Bool) {
