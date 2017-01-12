@@ -40,9 +40,9 @@
 		C941D9D81E25524B00C95990 /* UserDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941D9D71E25524B00C95990 /* UserDataProvider.swift */; };
 		C941D9DA1E25526900C95990 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941D9D91E25526900C95990 /* DataProvider.swift */; };
 		C941D9FC1E2561E400C95990 /* UIView+getDataFromURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941D9FB1E2561E400C95990 /* UIView+getDataFromURL.swift */; };
-		C97D6BCF1E26DDEF0054C9FA /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97D6BCC1E26DDEF0054C9FA /* Identifiable.swift */; };
-		C97D6BD01E26DDEF0054C9FA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97D6BCD1E26DDEF0054C9FA /* User.swift */; };
-		C97D6BD11E26DDEF0054C9FA /* Yacht.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97D6BCE1E26DDEF0054C9FA /* Yacht.swift */; };
+		C9DD43981E26EDFB009F7078 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DD43951E26EDFB009F7078 /* Identifiable.swift */; };
+		C9DD43991E26EDFB009F7078 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DD43961E26EDFB009F7078 /* User.swift */; };
+		C9DD439A1E26EDFB009F7078 /* Yacht.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DD43971E26EDFB009F7078 /* Yacht.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -290,9 +290,9 @@
 		C941D9D71E25524B00C95990 /* UserDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataProvider.swift; sourceTree = "<group>"; };
 		C941D9D91E25526900C95990 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		C941D9FB1E2561E400C95990 /* UIView+getDataFromURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+getDataFromURL.swift"; sourceTree = "<group>"; };
-		C97D6BCC1E26DDEF0054C9FA /* Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Identifiable.swift; path = Vendor/Carthage/Checkouts/yachtsShare/Source/Identifiable.swift; sourceTree = "<group>"; };
-		C97D6BCD1E26DDEF0054C9FA /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Vendor/Carthage/Checkouts/yachtsShare/Source/User.swift; sourceTree = "<group>"; };
-		C97D6BCE1E26DDEF0054C9FA /* Yacht.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Yacht.swift; path = Vendor/Carthage/Checkouts/yachtsShare/Source/Yacht.swift; sourceTree = "<group>"; };
+		C9DD43951E26EDFB009F7078 /* Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Identifiable.swift; path = Vendor/Carthage/Checkouts/yachtsShare/Sources/Identifiable.swift; sourceTree = "<group>"; };
+		C9DD43961E26EDFB009F7078 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Vendor/Carthage/Checkouts/yachtsShare/Sources/User.swift; sourceTree = "<group>"; };
+		C9DD43971E26EDFB009F7078 /* Yacht.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Yacht.swift; path = Vendor/Carthage/Checkouts/yachtsShare/Sources/Yacht.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -469,7 +469,7 @@
 		C941D9D11E2551E200C95990 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				C97D6BCB1E26DDB20054C9FA /* YachtsShare */,
+				C9DD43AF1E26EDFF009F7078 /* YachtsShare */,
 				C941D9B01E2551BA00C95990 /* Alamofire.xcodeproj */,
 				C941D9951E2551B200C95990 /* Result.xcodeproj */,
 				C941D9781E25517300C95990 /* ReactiveSwift.xcodeproj */,
@@ -489,12 +489,12 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		C97D6BCB1E26DDB20054C9FA /* YachtsShare */ = {
+		C9DD43AF1E26EDFF009F7078 /* YachtsShare */ = {
 			isa = PBXGroup;
 			children = (
-				C97D6BCC1E26DDEF0054C9FA /* Identifiable.swift */,
-				C97D6BCD1E26DDEF0054C9FA /* User.swift */,
-				C97D6BCE1E26DDEF0054C9FA /* Yacht.swift */,
+				C9DD43951E26EDFB009F7078 /* Identifiable.swift */,
+				C9DD43961E26EDFB009F7078 /* User.swift */,
+				C9DD43971E26EDFB009F7078 /* Yacht.swift */,
 			);
 			name = YachtsShare;
 			sourceTree = "<group>";
@@ -817,7 +817,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C97D6BCF1E26DDEF0054C9FA /* Identifiable.swift in Sources */,
+				C9DD43981E26EDFB009F7078 /* Identifiable.swift in Sources */,
 				C91B699D1E26C74D00B2CB9F /* UserViewController.swift in Sources */,
 				C941D9D61E25522C00C95990 /* ViewDataObserving.swift in Sources */,
 				C941D9FC1E2561E400C95990 /* UIView+getDataFromURL.swift in Sources */,
@@ -831,8 +831,8 @@
 				C941D9D51E25522C00C95990 /* UITableView+Reusable.swift in Sources */,
 				C91B699F1E26C74D00B2CB9F /* UserViewModel.swift in Sources */,
 				C941D9311E254C6800C95990 /* AppDelegate.swift in Sources */,
-				C97D6BD01E26DDEF0054C9FA /* User.swift in Sources */,
-				C97D6BD11E26DDEF0054C9FA /* Yacht.swift in Sources */,
+				C9DD43991E26EDFB009F7078 /* User.swift in Sources */,
+				C9DD439A1E26EDFB009F7078 /* Yacht.swift in Sources */,
 				C941D96C1E2550F100C95990 /* YachtTableViewCell.swift in Sources */,
 				C941D9701E2550F100C95990 /* YachtViewModel.swift in Sources */,
 				C91B699B1E26C74D00B2CB9F /* UserTableViewCell.swift in Sources */,

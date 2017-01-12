@@ -35,22 +35,9 @@ class UserViewController: UIViewController , ViewDataObserving {
   var selectYachtWith: ((Identifier) -> Void)?
   var refresh: (()->Void)?
 
-  @IBOutlet weak var searchView: UIView! {
-    didSet {
-      searchView.isHidden = !searchEnabled
-    }
-  }
-  @IBOutlet weak var textFieldSearch: UITextField!
-  @IBAction func actionSearchEditChanged(_ sender: Any) {
-    if let searchTerm = textFieldSearch.text {
-      updateSearch?(searchTerm)
-    }
-  }
-
   @IBOutlet weak var tableView: UITableView!
   var refreshControl:UIRefreshControl!
-
-  var searchEnabled:Bool = true
+  
   let cellReuseIdentifier: String = "UserTableViewCell"
   let cellNibName: String = "UserTableViewCell"
 
@@ -161,13 +148,12 @@ extension UserViewController {
 
   public static func factoryNav(searchEnabled:Bool = true) -> UINavigationController {
 
-    let title = "Yacht"
-    let vm = YachtViewModel()
-    let vc = YachtViewController()
-    vc.searchEnabled = searchEnabled
+    let title = "Users"
+    let vm = UserViewModel()
+    let vc = UserViewController()
     vc.observe(vm.viewData)
     vc.updateSearch = { searchString in
-      vm.fetchYachts(searchString: searchString)
+      vm.fetch(searchString: searchString)
     }
     vc.selectYachtWith = { id in
       print( " id\(id)")

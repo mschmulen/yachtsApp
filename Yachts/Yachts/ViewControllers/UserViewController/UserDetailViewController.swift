@@ -41,7 +41,7 @@ class UserDetailViewController: UIViewController {
 
   public convenience init( data:UserRowViewData)
   {
-    self.init(nibName: "YachtDetailViewController", bundle: Bundle(for: YachtDetailViewController.self), data:data )
+    self.init(nibName: "UserDetailViewController", bundle: Bundle(for: UserDetailViewController.self), data:data )
   }
 }
 

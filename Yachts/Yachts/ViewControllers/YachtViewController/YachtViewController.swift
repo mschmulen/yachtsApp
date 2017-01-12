@@ -60,6 +60,13 @@ class YachtViewController: UIViewController , ViewDataObserving {
     tableView.reloadData()
   }
 
+  func pullToRefresh()
+  {
+    self.refreshControl.beginRefreshing()
+    self.refreshControl.endRefreshing()
+  }
+
+
   func actionSearch() {
     updateSearch?("")
   }
@@ -162,13 +169,13 @@ extension YachtViewController {
 
   public static func factoryNav(searchEnabled:Bool = true) -> UINavigationController {
 
-    let title = "Yacht"
+    let title = "Yachts"
     let vm = YachtViewModel()
     let vc = YachtViewController()
     vc.searchEnabled = searchEnabled
     vc.observe(vm.viewData)
     vc.updateSearch = { searchString in
-      vm.fetchYachts(searchString: searchString)
+      vm.fetch(searchString: searchString)
     }
     vc.selectYachtWith = { id in
       print( " id\(id)")

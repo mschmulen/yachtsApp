@@ -15,10 +15,10 @@ public class YachtViewModel {
   public let viewData: MutableProperty<YachtViewData> = MutableProperty(.empty)
 
   public func refetch() {
-    fetchYachts(searchString: lastSearchString)
+    fetch(searchString: lastSearchString)
   }
 
-  public func fetchYachts(searchString:String) {
+  public func fetch(searchString:String) {
 
     lastSearchString = searchString
     
@@ -29,8 +29,8 @@ public class YachtViewModel {
         
         if let data = response.object(forKey:"data") {
           if let jsonResult = data as? Array<Dictionary<String,Any>> {
-            for yacht in jsonResult {
-              self.models.append( Yacht.deserialize(dictionary: yacht))
+            for record in jsonResult {
+              self.models.append( Yacht.deserialize(dictionary: record))
             }
           }
         }
@@ -59,7 +59,7 @@ public class YachtViewModel {
       )
     }).sorted{$0.title < $1.title }
 
-    let newData = YachtViewData(title: "data count \(allModels.count)", list: allModels)
+    let newData = YachtViewData(title: "Yachts \(allModels.count)", list: allModels)
 
     viewData.modify { value in
       value = newData

@@ -6,19 +6,19 @@ import Alamofire
 
 public class UserViewModel {
 
-  private let endpoint = "http://127.0.0.1:8090/yachts/"
+  private let endpoint = "http://127.0.0.1:8090/users/"
 
   private var lastSearchString = ""
-  private var models: [Yacht] = []
+  private var models: [User] = []
 
   private var providerObserver: Disposable?
   public let viewData: MutableProperty<UserViewData> = MutableProperty(.empty)
 
   public func refetch() {
-    fetchYachts(searchString: lastSearchString)
+    fetch(searchString: lastSearchString)
   }
 
-  public func fetchYachts(searchString:String) {
+  public func fetch(searchString:String) {
 
     lastSearchString = searchString
     
@@ -27,8 +27,8 @@ public class UserViewModel {
 
         let response = JSON as! NSDictionary
         if let data = response.object(forKey:"data"), let jsonResult = data as? Array<Dictionary<String,Any>> {
-          for yacht in jsonResult {
-            self.models.append( Yacht.deserialize(dictionary: yacht))
+          for record in jsonResult {
+            self.models.append( User.deserialize(dictionary: record))
           }
         }
         self.vend()
@@ -52,11 +52,11 @@ public class UserViewModel {
         title: $0.name,
         imageURL:URL(string: $0.imageURL) ?? URL(string:"http://nrgene.com/wp-content/plugins/lightbox/images/No-image-found.jpg")!,
         rating:9,
-        architect:$0.architect
+        architect:$0.email
       )
     }).sorted{$0.title < $1.title }
 
-    let newData = UserViewData(title: "data count \(allModels.count)", list: allModels)
+    let newData = UserViewData(title: "Users \(allModels.count)", list: allModels)
 
     viewData.modify { value in
       value = newData

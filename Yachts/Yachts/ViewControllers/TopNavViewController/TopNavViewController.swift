@@ -34,10 +34,10 @@ open class TopNavViewController: UITabBarController {
 
     self.init(nibName: nil, bundle: nil, userID:userID )
 
-    let nvcAll = YachtViewController.factoryNav(searchEnabled: false)
-    let nvcSearch = YachtViewController.factoryNav()
+    let nvcYachts = YachtViewController.factoryNav(searchEnabled: false)
+    let nvcUsers = UserViewController.factoryNav()
 
-    let viewControllers = [nvcAll, nvcSearch]
+    let viewControllers = [nvcYachts, nvcUsers]
     self.viewControllers = viewControllers
   }
 
