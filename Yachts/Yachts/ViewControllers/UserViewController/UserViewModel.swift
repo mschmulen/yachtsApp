@@ -50,9 +50,8 @@ public class UserViewModel {
     let allModels: [UserRowViewData] =  models.map({
       UserRowViewData(
         title: $0.name,
-        imageURL:URL(string: $0.imageURL) ?? URL(string:"http://nrgene.com/wp-content/plugins/lightbox/images/No-image-found.jpg")!,
-        rating:9,
-        architect:$0.email
+        imageURL:URL(string: $0.avatarURL) ?? URL(string:"http://nrgene.com/wp-content/plugins/lightbox/images/No-image-found.jpg")!,
+        email:$0.email
       )
     }).sorted{$0.title < $1.title }
 

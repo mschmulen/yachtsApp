@@ -1,5 +1,8 @@
 import PackageDescription
 
 let package = Package(
-    name: "yachtsShare"
+  name: "yachtsShare",
+  dependencies: [
+    .Package(url: "https://github.com/IBM-Swift/SwiftyJSON.git", majorVersion: 15)
+  ]
 )

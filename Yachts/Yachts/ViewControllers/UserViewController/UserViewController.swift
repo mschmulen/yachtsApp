@@ -16,15 +16,13 @@ public struct UserRowViewData : UIViewDataProtocol {
 
   let title:String
   let imageURL:URL
-  let rating:Int
-  let architect:String
+  let email:String
 
   static var empty: UserRowViewData {
     return UserRowViewData(
-      title:"AAA",
+      title:"~",
       imageURL:URL(string: "http://img00.deviantart.net/0fbb/i/2012/362/0/8/sail_boat_png___by_alzstock-d5pgl04.png")!,
-      rating:9,
-      architect:"Bob"
+      email:"~"
     )
   }
 }

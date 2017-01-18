@@ -16,7 +16,7 @@ class UserDetailViewController: UIViewController {
 
   @IBOutlet weak var labelArchitect: UILabel! {
     didSet{
-      labelArchitect.text = model.architect
+      labelArchitect.text = model.email
     }
   }
 

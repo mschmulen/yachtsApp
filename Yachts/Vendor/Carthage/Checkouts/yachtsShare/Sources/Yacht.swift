@@ -1,4 +1,7 @@
 
+import Foundation
+import SwiftyJSON
+
 public struct Yacht: Identifiable {
   
   public let id:Identifier
@@ -8,6 +11,7 @@ public struct Yacht: Identifiable {
   public let imageURL:String
   public let likes:Int
 
+  // Dictionary Serializers
   static public func deserialize(dictionary:Dictionary<String, Any>) ->Yacht {
     let model = Yacht(
       id: dictionary["id"] as! String,
@@ -29,6 +33,17 @@ public struct Yacht: Identifiable {
     model["imageURL"] = self.imageURL
     model["likes"] = self.likes
     return model
+  }
+
+  // JSON serializers
+  func toJSON() -> JSON {
+    return JSON([
+      "name": name,
+      "url": url,
+      "architect": architect,
+      "imageURL": imageURL,
+      "likes": likes
+      ])
   }
 
 }
