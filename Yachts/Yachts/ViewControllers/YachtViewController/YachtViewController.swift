@@ -4,7 +4,7 @@ import ReactiveSwift
 import Result
 
 public struct YachtViewData : UIViewDataProtocol {
-  var title:String
+  let title:String
   let list:[YachtRowViewData]
   
   static var empty: YachtViewData {
@@ -14,6 +14,7 @@ public struct YachtViewData : UIViewDataProtocol {
 
 public struct YachtRowViewData : UIViewDataProtocol {
 
+  let id:Identifier
   let title:String
   let imageURL:URL
   let rating:Int
@@ -21,10 +22,11 @@ public struct YachtRowViewData : UIViewDataProtocol {
 
   static var empty: YachtRowViewData {
     return YachtRowViewData(
-      title:"AAA",
+      id:"1",
+      title:"~",
       imageURL:URL(string: "http://img00.deviantart.net/0fbb/i/2012/362/0/8/sail_boat_png___by_alzstock-d5pgl04.png")!,
       rating:9,
-      architect:"Bob"
+      architect:"~"
     )
   }
 }
@@ -32,8 +34,10 @@ public struct YachtRowViewData : UIViewDataProtocol {
 class YachtViewController: UIViewController , UIViewDataObserving {
 
   var updateSearch: ((String) -> Void)?
-  var selectYachtWith: ((Identifier) -> Void)?
+  var selectModelWith: ((Identifier) -> Void)?
+  var deleteModelWith: ((Identifier) -> Void)?
   var refresh: (()->Void)?
+  var save: ((Yacht) -> Void)?
 
   @IBOutlet weak var searchView: UIView! {
     didSet {
@@ -50,6 +54,7 @@ class YachtViewController: UIViewController , UIViewDataObserving {
   @IBOutlet weak var tableView: UITableView!
   var refreshControl:UIRefreshControl!
 
+  typealias DeleteTuple = (indexPath:IndexPath,id:Identifier)
   var searchEnabled:Bool = true
   let cellReuseIdentifier: String = "YachtTableViewCell"
   let cellNibName: String = "YachtTableViewCell"
@@ -62,11 +67,14 @@ class YachtViewController: UIViewController , UIViewDataObserving {
   }
 
   func addTapped() {
-
     let vc = YachtNewViewController()
     vc.save = { model in
       print( "save: \(model.name) ")
-//      vm.new( model )
+      self.save?( model )
+    }
+    vc.cancel = {
+      print( "cancel")
+      vc.dismiss(animated: true, completion: nil)
     }
 
     if let nav = self.navigationController {
@@ -157,6 +165,33 @@ class YachtViewController: UIViewController , UIViewDataObserving {
     // Dispose of any resources that can be recreated.
   }
 
+  func confirmDelete(deleteReference:DeleteTuple) {
+
+    let alert = UIAlertController(title: "Delete", message: "Are you sure you want to permanently delete \(deleteReference.id)?", preferredStyle: .actionSheet)
+
+    let DeleteAction = UIAlertAction(title: "Delete", style: .destructive) { alertAction in
+
+      self.deleteModelWith?(deleteReference.id)
+      self.tableView.beginUpdates()
+      // MAS TODO , call the vm to delete
+      //vc.removeAtIndex(indexPath.row)
+      //models.removeAtIndex(indexPath.row)
+      // Note that indexPath is wrapped in an array:  [indexPath]
+      //tableView.deleteRows(at: [deleteTuple.indexPath], with: .automatic)
+      self.tableView.endUpdates()
+      //deleteModelTuple = nil
+    }
+
+    let CancelAction = UIAlertAction(title: "Cancel", style: .cancel) { alertAction in
+      //self.deleteModelTuple = nil
+    }
+
+    alert.addAction(DeleteAction)
+    alert.addAction(CancelAction)
+
+    self.present(alert, animated: true, completion: nil)
+  }
+
 }
 
 extension YachtViewController : UITableViewDataSource {
@@ -190,11 +225,20 @@ extension YachtViewController : UITableViewDelegate {
       self.present(vc, animated: true, completion: nil)
     }
   }
+
+  public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+
+    if editingStyle == .delete {
+      confirmDelete(deleteReference: DeleteTuple(indexPath:indexPath, id:viewData.value.list[indexPath.item].id))
+    }
+  }
+
 }
 
 extension YachtViewController {
 
   public static func factoryNav(searchEnabled:Bool = true) -> UINavigationController {
+
     let title = "Yachts"
     let vm = YachtViewModel()
     let vc = YachtViewController()
@@ -203,16 +247,21 @@ extension YachtViewController {
     vc.updateSearch = { searchString in
       vm.fetch(searchString: searchString)
     }
-    vc.selectYachtWith = { id in
+    vc.selectModelWith = { id in
       print( " id\(id)")
     }
     vc.refresh = {
       vm.refetch()
     }
+    vc.save = { model in
+      vm.postCreate( model: model)
+    }
+    vc.deleteModelWith = { id in
+      vm.delete(id: id)
+    }
 
     let nvc = UINavigationController(rootViewController: vc)
     nvc.tabBarItem = UITabBarItem(title: title, image: nil, tag:2)
-    //    nvc.tabBarItem.setFAIcon(FAType.faShoppingCart)
     vc.title = title
 
     return nvc

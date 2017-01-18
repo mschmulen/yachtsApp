@@ -22,19 +22,23 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jJX-UO-ip0" userLabel="imageViewContainer">
-                    <rect key="frame" x="7" y="49" width="364" height="235"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jJX-UO-ip0" userLabel="imageViewContainer">
+                    <rect key="frame" x="5" y="49" width="365" height="235"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="default-thumbnail" translatesAutoresizingMaskIntoConstraints="NO" id="XTs-6j-b1o" userLabel="imageView">
-                            <rect key="frame" x="8" y="8" width="348" height="218"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default-thumbnail" translatesAutoresizingMaskIntoConstraints="NO" id="XTs-6j-b1o" userLabel="imageView">
+                            <rect key="frame" x="2" y="2" width="361" height="231"/>
                         </imageView>
                     </subviews>
+                    <constraints>
+                        <constraint firstItem="XTs-6j-b1o" firstAttribute="leading" secondItem="jJX-UO-ip0" secondAttribute="leading" constant="2" id="Z3O-vA-MkU"/>
+                        <constraint firstAttribute="height" constant="235" id="gFj-KC-cES"/>
+                        <constraint firstItem="XTs-6j-b1o" firstAttribute="top" secondItem="jJX-UO-ip0" secondAttribute="top" constant="2" id="jVp-W2-Duc"/>
+                        <constraint firstAttribute="bottom" secondItem="XTs-6j-b1o" secondAttribute="bottom" constant="2" id="kku-r3-piP"/>
+                        <constraint firstAttribute="trailing" secondItem="XTs-6j-b1o" secondAttribute="trailing" constant="2" id="rtA-Jj-85h"/>
+                    </constraints>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AHz-8g-OUO">
-                    <rect key="frame" x="7" y="288" width="364" height="92"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AHz-8g-OUO" userLabel="contentView">
+                    <rect key="frame" x="2" y="306" width="371" height="321"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Khb-Tm-Ldg" userLabel="name">
                             <rect key="frame" x="8" y="8" width="237" height="23"/>
@@ -54,6 +58,15 @@
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="AHz-8g-OUO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="2" id="3aH-M1-HWL"/>
+                <constraint firstAttribute="bottom" secondItem="AHz-8g-OUO" secondAttribute="bottom" constant="40" id="Bbz-4m-vmX"/>
+                <constraint firstItem="AHz-8g-OUO" firstAttribute="top" secondItem="jJX-UO-ip0" secondAttribute="bottom" constant="22" id="DMO-js-qio"/>
+                <constraint firstAttribute="trailing" secondItem="jJX-UO-ip0" secondAttribute="trailing" constant="5" id="EaE-et-5BP"/>
+                <constraint firstItem="jJX-UO-ip0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="EwA-0z-SIm"/>
+                <constraint firstAttribute="trailing" secondItem="AHz-8g-OUO" secondAttribute="trailing" constant="2" id="a8o-7p-SmG"/>
+                <constraint firstItem="jJX-UO-ip0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="49" id="ibc-ic-iFt"/>
+            </constraints>
             <point key="canvasLocation" x="32.5" y="67.5"/>
         </view>
     </objects>
