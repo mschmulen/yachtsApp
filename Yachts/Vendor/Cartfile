@@ -7,7 +7,7 @@ github "ReactiveCocoa/ReactiveSwift" "1.0.0-alpha.4"
 
 github "Haneke/HanekeSwift" "feature/swift-3"
 
-github "mschmulen/yachtsShare"
+github "mschmulen/yachtsShare" == 0.0.5
 
 
 
