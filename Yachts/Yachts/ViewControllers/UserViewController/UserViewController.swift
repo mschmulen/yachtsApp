@@ -83,8 +83,6 @@ class UserViewController: UIViewController , UIViewDataObserving {
       forCellReuseIdentifier: cellReuseIdentifier
     )
 
-    tableView.rowHeight = UserTableViewCell.rowHeight
-    
     refreshControl = UIRefreshControl()
     refreshControl.addTarget(self, action: #selector(UserViewController.pullToRefresh), for: UIControlEvents.valueChanged)
     tableView.addSubview(refreshControl)

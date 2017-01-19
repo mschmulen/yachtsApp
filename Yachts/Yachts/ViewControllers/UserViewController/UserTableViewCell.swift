@@ -6,9 +6,7 @@ class UserTableViewCell: UITableViewCell, UIReusable {
   @IBOutlet weak var imageThumbnail: UIImageView!
   @IBOutlet weak var titleLabel: UILabel!
   @IBOutlet weak var descriptionLabel: UILabel!
-
-  static let rowHeight:CGFloat = CGFloat(189.0)
-
+  
   func loadItem(_ model: UserRowViewData ) {
     titleLabel.text = model.title
     descriptionLabel.text = model.email
