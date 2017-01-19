@@ -20,14 +20,14 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="105" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iOp-a7-9XT">
-                    <rect key="frame" x="0.0" y="105" width="375" height="482"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="105" sectionHeaderHeight="1" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iOp-a7-9XT">
+                    <rect key="frame" x="0.0" y="60" width="375" height="527"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="iOp-a7-9XT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="105" id="DIC-c5-7Ti"/>
+                <constraint firstItem="iOp-a7-9XT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="DIC-c5-7Ti"/>
                 <constraint firstItem="iOp-a7-9XT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dWv-W2-qVU"/>
                 <constraint firstAttribute="trailing" secondItem="iOp-a7-9XT" secondAttribute="trailing" id="jut-EL-ezt"/>
                 <constraint firstAttribute="bottom" secondItem="iOp-a7-9XT" secondAttribute="bottom" constant="80" id="pWB-4k-ktf"/>
