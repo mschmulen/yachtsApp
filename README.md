@@ -7,7 +7,6 @@ Evaluation demo for using Isomorphic swift model structs on the server and the c
 - Companion iOS App [https://github.com/mschmulen/yachtsApp](https://github.com/mschmulen/yachtsApp)
 - Common shared Swift package for isomorphic models [https://github.com/mschmulen/yachtsShare](https://github.com/mschmulen/yachtsShare)
 
-
 ###Building and Running 
 
 1. Clone this repo `git@github.com:mschmulen/yachtsApp.git`
