@@ -59,7 +59,17 @@ extension YachtViewModel {
 
   // router.get("/yachts", handler: yachtService.getAll)
   public func getAll() {
+
+    self.clearModels()
     Alamofire.request(endpointModelRoot).responseJSON { response in
+
+//      switch(response.result) {
+//      case .failure(_):
+//        print(response.result.debugDescription)
+//      case .success(_):
+//        break
+//      }
+
       if let JSON = response.result.value {
 
         let response = JSON as! NSDictionary
@@ -74,7 +84,7 @@ extension YachtViewModel {
         self.vend()
       }
     }
-    clearModels()
+
   }
 
   //router.get("/yachts/:id", handler:  yachtService.getModel)

@@ -132,9 +132,7 @@ class YachtViewController: UIViewController , UIViewDataObserving {
       UINib(nibName: cellNibName, bundle: Bundle(for: YachtViewController.self)),
       forCellReuseIdentifier: cellReuseIdentifier
     )
-
-    tableView.rowHeight = YachtTableViewCell.rowHeight
-
+    
     refreshControl = UIRefreshControl()
     refreshControl.addTarget(self, action: #selector(YachtViewController.pullToRefresh), for: UIControlEvents.valueChanged)
     tableView.addSubview(refreshControl)
