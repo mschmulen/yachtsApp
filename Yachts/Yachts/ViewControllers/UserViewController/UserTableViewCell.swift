@@ -10,7 +10,10 @@ class UserTableViewCell: UITableViewCell, UIReusable {
   func loadItem(_ model: UserRowViewData ) {
     titleLabel.text = model.title
     descriptionLabel.text = model.email
-    downloadImage(model.imageURL)
+    if let url = URL(string: model.imageURL) {
+      downloadImage(url)
+    }
+
   }
 
   override func awakeFromNib() {

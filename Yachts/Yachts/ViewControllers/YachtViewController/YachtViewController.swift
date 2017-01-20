@@ -16,7 +16,7 @@ public struct YachtRowViewData : UIViewDataProtocol {
 
   let id:Identifier
   let title:String
-  let imageURL:URL
+  let imageURL:String
   let rating:Int
   let architect:String
 
@@ -24,7 +24,7 @@ public struct YachtRowViewData : UIViewDataProtocol {
     return YachtRowViewData(
       id:"1",
       title:"~",
-      imageURL:URL(string: "http://img00.deviantart.net/0fbb/i/2012/362/0/8/sail_boat_png___by_alzstock-d5pgl04.png")!,
+      imageURL:"http://img00.deviantart.net/0fbb/i/2012/362/0/8/sail_boat_png___by_alzstock-d5pgl04.png",
       rating:9,
       architect:"~"
     )

@@ -1,5 +1,5 @@
 //
-//  Yacht.swift
+//  Architect.swift
 //
 //  Created by Matt Schmulen on 1/20/17
 //  Copyright (c) __MyCompanyName__. All rights reserved.
@@ -8,24 +8,18 @@
 import Foundation
 import SwiftyJSON
 
-public struct Yacht {
+public struct Architect {
 
   // MARK: Declaration for string constants to be used to decode and also serialize.
   private struct SerializationKeys {
-    static let imageURL = "imageURL"
-    static let architect = "architect"
-    static let name = "name"
     static let id = "id"
-    static let likes = "likes"
+    static let name = "name"
     static let url = "url"
   }
 
   // MARK: Properties
-  public var imageURL: String?
-  public var architect: String?
-  public var name: String?
   public var id: String?
-  public var likes: Int?
+  public var name: String?
   public var url: String?
 
   // MARK: SwiftyJSON Initializers
@@ -41,11 +35,8 @@ public struct Yacht {
   ///
   /// - parameter json: JSON object from SwiftyJSON.
   public init(json: JSON) {
-    imageURL = json[SerializationKeys.imageURL].string
-    architect = json[SerializationKeys.architect].string
-    name = json[SerializationKeys.name].string
     id = json[SerializationKeys.id].string
-    likes = json[SerializationKeys.likes].int
+    name = json[SerializationKeys.name].string
     url = json[SerializationKeys.url].string
   }
 
@@ -54,11 +45,8 @@ public struct Yacht {
   /// - returns: A Key value pair containing all valid values in the object.
   public func dictionaryRepresentation() -> [String: Any] {
     var dictionary: [String: Any] = [:]
-    if let value = imageURL { dictionary[SerializationKeys.imageURL] = value }
-    if let value = architect { dictionary[SerializationKeys.architect] = value }
-    if let value = name { dictionary[SerializationKeys.name] = value }
     if let value = id { dictionary[SerializationKeys.id] = value }
-    if let value = likes { dictionary[SerializationKeys.likes] = value }
+    if let value = name { dictionary[SerializationKeys.name] = value }
     if let value = url { dictionary[SerializationKeys.url] = value }
     return dictionary
   }

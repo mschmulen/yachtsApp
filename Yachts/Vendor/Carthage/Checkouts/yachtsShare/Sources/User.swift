@@ -1,46 +1,58 @@
+//
+//  User.swift
+//
+//  Created by Matt Schmulen on 1/20/17
+//  Copyright (c) __MyCompanyName__. All rights reserved.
+//
 
 import Foundation
 import SwiftyJSON
 
-public struct User: Identifiable {
-  public let id:Identifier
-  public let name:String
-  public let email:String
-  public let avatarURL:String
+public struct User {
 
-  // Dictionary Serializers
-  static public func deserialize(dictionary:Dictionary<String, Any>) -> User {
-    let model = User(
-      id: dictionary["id"] as! String,
-      name: dictionary["name"] as! String,
-      email: dictionary["email"] as! String,
-      avatarURL: dictionary["avatarURL"] as! String
-    )
-    return model
+  // MARK: Declaration for string constants to be used to decode and also serialize.
+  private struct SerializationKeys {
+    static let name = "name"
+    static let email = "email"
+    static let id = "id"
+    static let avatarURL = "avatarURL"
   }
 
-  public func serialize() -> [String: Any] {
-    var model = [String: Any]()
-    model["id"] = self.id
-    model["name"] = self.name
-    model["email"] = self.email
-    model["avatarURL"] = self.avatarURL
-    return model
+  // MARK: Properties
+  public var name: String?
+  public var email: String?
+  public var id: String?
+  public var avatarURL: String?
+
+  // MARK: SwiftyJSON Initializers
+  /// Initiates the instance based on the object.
+  ///
+  /// - parameter object: The object of either Dictionary or Array kind that was passed.
+  /// - returns: An initialized instance of the class.
+  public init(object: Any) {
+    self.init(json: JSON(object))
   }
 
-  //   JSON serializers
-  func toJSON() -> JSON {
-    return JSON([
-      "name": name,
-      "email": email,
-      "avatarURL": avatarURL
-      ])
+  /// Initiates the instance based on the JSON that was passed.
+  ///
+  /// - parameter json: JSON object from SwiftyJSON.
+  public init(json: JSON) {
+    name = json[SerializationKeys.name].string
+    email = json[SerializationKeys.email].string
+    id = json[SerializationKeys.id].string
+    avatarURL = json[SerializationKeys.avatarURL].string
   }
 
-}
-
-extension User: Equatable {
-  static public func ==(lhs: User, rhs:User) -> Bool {
-    return lhs.id == rhs.id
+  /// Generates description of the object in the form of a NSDictionary.
+  ///
+  /// - returns: A Key value pair containing all valid values in the object.
+  public func dictionaryRepresentation() -> [String: Any] {
+    var dictionary: [String: Any] = [:]
+    if let value = name { dictionary[SerializationKeys.name] = value }
+    if let value = email { dictionary[SerializationKeys.email] = value }
+    if let value = id { dictionary[SerializationKeys.id] = value }
+    if let value = avatarURL { dictionary[SerializationKeys.avatarURL] = value }
+    return dictionary
   }
+
 }

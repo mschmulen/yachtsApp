@@ -28,7 +28,11 @@ public class UserViewModel {
         let response = JSON as! NSDictionary
         if let data = response.object(forKey:"data"), let jsonResult = data as? Array<Dictionary<String,Any>> {
           for record in jsonResult {
-            self.models.append( User.deserialize(dictionary: record))
+
+            let anyDictionary = record as Any
+            let model = User(object: anyDictionary)
+            //User.deserialize(dictionary: record)
+            self.models.append(model)
           }
         }
         self.vend()
@@ -48,10 +52,10 @@ public class UserViewModel {
 
   private func vend() {
     let allModels: [UserRowViewData] =  models.map({
-      UserRowViewData(
-        title: $0.name,
-        imageURL:URL(string: $0.avatarURL) ?? URL(string:"http://nrgene.com/wp-content/plugins/lightbox/images/No-image-found.jpg")!,
-        email:$0.email
+      UserRowViewData (
+        title: $0.name ?? "~",
+        imageURL: $0.avatarURL ?? "http://nrgene.com/wp-content/plugins/lightbox/images/No-image-found.jpg",
+        email:$0.email ?? "~"
       )
     }).sorted{$0.title < $1.title }
 

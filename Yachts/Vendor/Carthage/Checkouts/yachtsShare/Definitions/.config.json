@@ -1,0 +1,9 @@
+{
+    "destination_path": "../Sources",
+    "author_name": "Matt Schmulen",
+    "construct_type": "struct",
+    "model_mapping_library": "SwiftyJSON",
+    "support_nscoding": false,
+    "is_final_required": false,
+    "is_header_included": false
+ }

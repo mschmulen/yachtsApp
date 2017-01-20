@@ -9,14 +9,24 @@ class YachtNewViewController: UIViewController {
 
   @IBAction func actionSave(_ sender: Any) {
 
-    let m = Yacht (
-      id: "123",
-      name: "NewModel",
-      architect: "new architect",
-      url: "http://bluewaterboats.org/valiant-39/",
-      imageURL: "https://s-media-cache-ak0.pinimg.com/236x/e5/62/f2/e562f2ca779b4cdb50f10f97bd3c8b4b.jpg",
-      likes: 0)
-    save?(m)
+//    let m = Yacht (
+//      id: "123",
+//      name: "NewModel",
+//      architect: "new architect",
+//      url: "http://bluewaterboats.org/valiant-39/",
+//      imageURL: "https://s-media-cache-ak0.pinimg.com/236x/e5/62/f2/e562f2ca779b4cdb50f10f97bd3c8b4b.jpg",
+//      likes: 0)
+
+    let dictionary = [
+      "id": "123",
+      "name": "NewModel",
+      "architect": "new architect",
+      "url": "http://bluewaterboats.org/valiant-39/",
+      "imageURL": "https://s-media-cache-ak0.pinimg.com/236x/e5/62/f2/e562f2ca779b4cdb50f10f97bd3c8b4b.jpg",
+    ]
+
+    let m = Yacht(object:dictionary)
+    //    save?(m)
   }
 
   @IBAction func actionCancel(_ sender: Any) {

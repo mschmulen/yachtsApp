@@ -37,11 +37,11 @@ public class YachtViewModel {
   internal func vend() {
     let allModels: [YachtRowViewData] =  models.map({
       YachtRowViewData(
-        id: $0.id,
-        title: $0.name,
-        imageURL:URL(string: $0.imageURL) ?? URL(string:"http://nrgene.com/wp-content/plugins/lightbox/images/No-image-found.jpg")!,
+        id: $0.id ?? "~",
+        title: $0.name ?? "~",
+        imageURL: $0.imageURL ?? "http://nrgene.com/wp-content/plugins/lightbox/images/No-image-found.jpg",
         rating:9,
-        architect:$0.architect
+        architect:$0.architect ?? "~"
       )
     }).sorted{$0.title < $1.title }
 
@@ -77,7 +77,10 @@ extension YachtViewModel {
         if let data = response.object(forKey:"data") {
           if let jsonResult = data as? Array<Dictionary<String,Any>> {
             for record in jsonResult {
-              self.models.append( Yacht.deserialize(dictionary: record))
+              let anyDictionary = record as Any
+              let model = Yacht(object: anyDictionary)
+              //User.deserialize(dictionary: record)
+              self.models.append(model)
             }
           }
         }

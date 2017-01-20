@@ -22,7 +22,10 @@ class YachtDetailViewController: UIViewController {
 
   override public func viewDidLoad() {
     super.viewDidLoad()
-    downloadImage(model.imageURL)
+    if let url = URL(string: model.imageURL) {
+      downloadImage(url)
+    }
+
   }
 
   override public func didReceiveMemoryWarning() {

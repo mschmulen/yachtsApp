@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_22"
+               BlueprintIdentifier = "OBJ_26"
                BuildableName = "SwiftyJSON.framework"
                BlueprintName = "SwiftyJSON"
                ReferencedContainer = "container:yachtsShare.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_30"
+               BlueprintIdentifier = "OBJ_34"
                BuildableName = "yachtsShare.framework"
                BlueprintName = "yachtsShare"
                ReferencedContainer = "container:yachtsShare.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_41"
+               BlueprintIdentifier = "OBJ_48"
                BuildableName = "YachtModelsTests.xctest"
                BlueprintName = "YachtModelsTests"
                ReferencedContainer = "container:yachtsShare.xcodeproj">
@@ -69,7 +69,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "OBJ_22"
+            BlueprintIdentifier = "OBJ_26"
             BuildableName = "SwiftyJSON.framework"
             BlueprintName = "SwiftyJSON"
             ReferencedContainer = "container:yachtsShare.xcodeproj">

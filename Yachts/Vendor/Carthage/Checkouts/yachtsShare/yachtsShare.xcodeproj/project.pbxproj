@@ -7,67 +7,74 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		OBJ_27 /* LclJSONSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* LclJSONSerialization.swift */; };
-		OBJ_28 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* SwiftyJSON.swift */; };
-		OBJ_35 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Identifiable.swift */; };
-		OBJ_36 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* User.swift */; };
-		OBJ_37 /* Yacht.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Yacht.swift */; };
-		OBJ_39 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* SwiftyJSON.framework */; };
-		OBJ_46 /* YachtModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* YachtModelsTests.swift */; };
-		OBJ_48 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* SwiftyJSON.framework */; };
+		OBJ_31 /* LclJSONSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* LclJSONSerialization.swift */; };
+		OBJ_32 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* SwiftyJSON.swift */; };
+		OBJ_39 /* Architect.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Architect.swift */; };
+		OBJ_40 /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Engine.swift */; };
+		OBJ_41 /* Forsale.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Forsale.swift */; };
+		OBJ_42 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* Identifiable.swift */; };
+		OBJ_43 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* User.swift */; };
+		OBJ_44 /* Yacht.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* Yacht.swift */; };
+		OBJ_46 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* SwiftyJSON.framework */; };
+		OBJ_53 /* YachtModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* YachtModelsTests.swift */; };
+		OBJ_55 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* SwiftyJSON.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C9EED5E41E301E6D009C2104 /* PBXContainerItemProxy */ = {
+		C9D24E331E32A8C6005557D8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_22;
+			remoteGlobalIDString = OBJ_26;
 			remoteInfo = SwiftyJSON;
 		};
-		C9EED5E51E301E6D009C2104 /* PBXContainerItemProxy */ = {
+		C9D24E341E32A8C6005557D8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_22;
+			remoteGlobalIDString = OBJ_26;
 			remoteInfo = SwiftyJSON;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		OBJ_10 /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
-		OBJ_12 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
-		OBJ_13 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		OBJ_14 /* Yacht.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yacht.swift; sourceTree = "<group>"; };
-		OBJ_17 /* YachtModelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YachtModelsTests.swift; sourceTree = "<group>"; };
-		OBJ_19 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_20 /* yachtsShare.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = yachtsShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_21 /* YachtModelsTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = YachtModelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_12 /* Architect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Architect.swift; sourceTree = "<group>"; };
+		OBJ_13 /* Engine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
+		OBJ_14 /* Forsale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forsale.swift; sourceTree = "<group>"; };
+		OBJ_15 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
+		OBJ_16 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		OBJ_17 /* Yacht.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yacht.swift; sourceTree = "<group>"; };
+		OBJ_20 /* YachtModelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YachtModelsTests.swift; sourceTree = "<group>"; };
+		OBJ_21 /* Definitions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Definitions; sourceTree = SOURCE_ROOT; };
+		OBJ_23 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_24 /* yachtsShare.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = yachtsShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_25 /* YachtModelsTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = YachtModelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* LclJSONSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LclJSONSerialization.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_29 /* Frameworks */ = {
+		OBJ_33 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_38 /* Frameworks */ = {
+		OBJ_45 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_39 /* SwiftyJSON.framework in Frameworks */,
+				OBJ_46 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_47 /* Frameworks */ = {
+		OBJ_54 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_48 /* SwiftyJSON.framework in Frameworks */,
+				OBJ_55 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,37 +84,40 @@
 		OBJ_11 /* yachtsShare */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_12 /* Identifiable.swift */,
-				OBJ_13 /* User.swift */,
-				OBJ_14 /* Yacht.swift */,
+				OBJ_12 /* Architect.swift */,
+				OBJ_13 /* Engine.swift */,
+				OBJ_14 /* Forsale.swift */,
+				OBJ_15 /* Identifiable.swift */,
+				OBJ_16 /* User.swift */,
+				OBJ_17 /* Yacht.swift */,
 			);
 			name = yachtsShare;
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_15 /* Tests */ = {
+		OBJ_18 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_16 /* YachtModelsTests */,
+				OBJ_19 /* YachtModelsTests */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		OBJ_16 /* YachtModelsTests */ = {
+		OBJ_19 /* YachtModelsTests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_17 /* YachtModelsTests.swift */,
+				OBJ_20 /* YachtModelsTests.swift */,
 			);
 			name = YachtModelsTests;
 			path = Tests/YachtModelsTests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_18 /* Products */ = {
+		OBJ_22 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_19 /* SwiftyJSON.framework */,
-				OBJ_20 /* yachtsShare.framework */,
-				OBJ_21 /* YachtModelsTests.xctest */,
+				OBJ_23 /* SwiftyJSON.framework */,
+				OBJ_24 /* yachtsShare.framework */,
+				OBJ_25 /* YachtModelsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -117,8 +127,9 @@
 			children = (
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
-				OBJ_15 /* Tests */,
-				OBJ_18 /* Products */,
+				OBJ_18 /* Tests */,
+				OBJ_21 /* Definitions */,
+				OBJ_22 /* Products */,
 			);
 			name = "";
 			sourceTree = "<group>";
@@ -145,12 +156,12 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		OBJ_22 /* SwiftyJSON */ = {
+		OBJ_26 /* SwiftyJSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_23 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildConfigurationList = OBJ_27 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
 			buildPhases = (
-				OBJ_26 /* Sources */,
-				OBJ_29 /* Frameworks */,
+				OBJ_30 /* Sources */,
+				OBJ_33 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,41 +169,41 @@
 			);
 			name = SwiftyJSON;
 			productName = SwiftyJSON;
-			productReference = OBJ_19 /* SwiftyJSON.framework */;
+			productReference = OBJ_23 /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		OBJ_30 /* yachtsShare */ = {
+		OBJ_34 /* yachtsShare */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_31 /* Build configuration list for PBXNativeTarget "yachtsShare" */;
+			buildConfigurationList = OBJ_35 /* Build configuration list for PBXNativeTarget "yachtsShare" */;
 			buildPhases = (
-				OBJ_34 /* Sources */,
-				OBJ_38 /* Frameworks */,
+				OBJ_38 /* Sources */,
+				OBJ_45 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_40 /* PBXTargetDependency */,
+				OBJ_47 /* PBXTargetDependency */,
 			);
 			name = yachtsShare;
 			productName = yachtsShare;
-			productReference = OBJ_20 /* yachtsShare.framework */;
+			productReference = OBJ_24 /* yachtsShare.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		OBJ_41 /* YachtModelsTests */ = {
+		OBJ_48 /* YachtModelsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_42 /* Build configuration list for PBXNativeTarget "YachtModelsTests" */;
+			buildConfigurationList = OBJ_49 /* Build configuration list for PBXNativeTarget "YachtModelsTests" */;
 			buildPhases = (
-				OBJ_45 /* Sources */,
-				OBJ_47 /* Frameworks */,
+				OBJ_52 /* Sources */,
+				OBJ_54 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_49 /* PBXTargetDependency */,
+				OBJ_56 /* PBXTargetDependency */,
 			);
 			name = YachtModelsTests;
 			productName = YachtModelsTests;
-			productReference = OBJ_21 /* YachtModelsTests.xctest */;
+			productReference = OBJ_25 /* YachtModelsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -211,62 +222,65 @@
 				en,
 			);
 			mainGroup = OBJ_5 /*  */;
-			productRefGroup = OBJ_18 /* Products */;
+			productRefGroup = OBJ_22 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				OBJ_22 /* SwiftyJSON */,
-				OBJ_30 /* yachtsShare */,
-				OBJ_41 /* YachtModelsTests */,
+				OBJ_26 /* SwiftyJSON */,
+				OBJ_34 /* yachtsShare */,
+				OBJ_48 /* YachtModelsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_26 /* Sources */ = {
+		OBJ_30 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_27 /* LclJSONSerialization.swift in Sources */,
-				OBJ_28 /* SwiftyJSON.swift in Sources */,
+				OBJ_31 /* LclJSONSerialization.swift in Sources */,
+				OBJ_32 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_34 /* Sources */ = {
+		OBJ_38 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_35 /* Identifiable.swift in Sources */,
-				OBJ_36 /* User.swift in Sources */,
-				OBJ_37 /* Yacht.swift in Sources */,
+				OBJ_39 /* Architect.swift in Sources */,
+				OBJ_40 /* Engine.swift in Sources */,
+				OBJ_41 /* Forsale.swift in Sources */,
+				OBJ_42 /* Identifiable.swift in Sources */,
+				OBJ_43 /* User.swift in Sources */,
+				OBJ_44 /* Yacht.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_45 /* Sources */ = {
+		OBJ_52 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_46 /* YachtModelsTests.swift in Sources */,
+				OBJ_53 /* YachtModelsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_40 /* PBXTargetDependency */ = {
+		OBJ_47 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_22 /* SwiftyJSON */;
-			targetProxy = C9EED5E41E301E6D009C2104 /* PBXContainerItemProxy */;
+			target = OBJ_26 /* SwiftyJSON */;
+			targetProxy = C9D24E331E32A8C6005557D8 /* PBXContainerItemProxy */;
 		};
-		OBJ_49 /* PBXTargetDependency */ = {
+		OBJ_56 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_22 /* SwiftyJSON */;
-			targetProxy = C9EED5E51E301E6D009C2104 /* PBXContainerItemProxy */;
+			target = OBJ_26 /* SwiftyJSON */;
+			targetProxy = C9D24E341E32A8C6005557D8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_24 /* Debug */ = {
+		OBJ_28 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -286,7 +300,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_25 /* Release */ = {
+		OBJ_29 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -328,7 +342,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_32 /* Debug */ = {
+		OBJ_36 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -348,7 +362,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_33 /* Release */ = {
+		OBJ_37 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -388,7 +402,7 @@
 			};
 			name = Release;
 		};
-		OBJ_43 /* Debug */ = {
+		OBJ_50 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -405,7 +419,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_44 /* Release */ = {
+		OBJ_51 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -434,29 +448,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_23 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+		OBJ_27 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_24 /* Debug */,
-				OBJ_25 /* Release */,
+				OBJ_28 /* Debug */,
+				OBJ_29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_31 /* Build configuration list for PBXNativeTarget "yachtsShare" */ = {
+		OBJ_35 /* Build configuration list for PBXNativeTarget "yachtsShare" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_32 /* Debug */,
-				OBJ_33 /* Release */,
+				OBJ_36 /* Debug */,
+				OBJ_37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_42 /* Build configuration list for PBXNativeTarget "YachtModelsTests" */ = {
+		OBJ_49 /* Build configuration list for PBXNativeTarget "YachtModelsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_43 /* Debug */,
-				OBJ_44 /* Release */,
+				OBJ_50 /* Debug */,
+				OBJ_51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

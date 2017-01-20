@@ -44,6 +44,8 @@
 		C99367EC1E2FDD8F00B3995D /* YachtNewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C99367E81E2FDD8F00B3995D /* YachtNewViewController.xib */; };
 		C9C441191E3023F300209A74 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C4410C1E3023E800209A74 /* SwiftyJSON.framework */; };
 		C9C4411A1E3023F300209A74 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9C4410C1E3023E800209A74 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C9D24C351E326B99005557D8 /* TextInputFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D24C341E326B99005557D8 /* TextInputFieldView.swift */; };
+		C9D24C371E326F20005557D8 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D24C361E326F20005557D8 /* UIView+Extension.swift */; };
 		C9DD43981E26EDFB009F7078 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DD43951E26EDFB009F7078 /* Identifiable.swift */; };
 		C9DD43991E26EDFB009F7078 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DD43961E26EDFB009F7078 /* User.swift */; };
 		C9DD439A1E26EDFB009F7078 /* Yacht.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DD43971E26EDFB009F7078 /* Yacht.swift */; };
@@ -354,6 +356,8 @@
 		C99367E71E2FDD8F00B3995D /* YachtNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YachtNewViewController.swift; sourceTree = "<group>"; };
 		C99367E81E2FDD8F00B3995D /* YachtNewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YachtNewViewController.xib; sourceTree = "<group>"; };
 		C9C440ED1E3023E800209A74 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = Vendor/Carthage/Checkouts/SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
+		C9D24C341E326B99005557D8 /* TextInputFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputFieldView.swift; sourceTree = "<group>"; };
+		C9D24C361E326F20005557D8 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		C9DD43951E26EDFB009F7078 /* Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Identifiable.swift; path = Vendor/Carthage/Checkouts/yachtsShare/Sources/Identifiable.swift; sourceTree = "<group>"; };
 		C9DD43961E26EDFB009F7078 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Vendor/Carthage/Checkouts/yachtsShare/Sources/User.swift; sourceTree = "<group>"; };
 		C9DD43971E26EDFB009F7078 /* Yacht.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Yacht.swift; path = Vendor/Carthage/Checkouts/yachtsShare/Sources/Yacht.swift; sourceTree = "<group>"; };
@@ -427,6 +431,7 @@
 			isa = PBXGroup;
 			children = (
 				C941D95E1E2550F100C95990 /* ViewControllers */,
+				C9D24C331E326B99005557D8 /* Common */,
 				C941D9D21E25522C00C95990 /* Utils */,
 				C941D9301E254C6800C95990 /* AppDelegate.swift */,
 				C941D9321E254C6800C95990 /* ViewController.swift */,
@@ -585,6 +590,15 @@
 				C9C441181E3023E800209A74 /* SwiftyJSON tvOS Tests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C9D24C331E326B99005557D8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C9D24C341E326B99005557D8 /* TextInputFieldView.swift */,
+				C9D24C361E326F20005557D8 /* UIView+Extension.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		C9DD43AF1E26EDFF009F7078 /* YachtsShare */ = {
@@ -970,6 +984,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9D24C371E326F20005557D8 /* UIView+Extension.swift in Sources */,
 				C9DD43981E26EDFB009F7078 /* Identifiable.swift in Sources */,
 				C91B699D1E26C74D00B2CB9F /* UserViewController.swift in Sources */,
 				C941D9D61E25522C00C95990 /* UIViewDataObserving.swift in Sources */,
@@ -989,6 +1004,7 @@
 				C941D96C1E2550F100C95990 /* YachtTableViewCell.swift in Sources */,
 				C99367EB1E2FDD8F00B3995D /* YachtNewViewController.swift in Sources */,
 				C941D9701E2550F100C95990 /* YachtViewModel.swift in Sources */,
+				C9D24C351E326B99005557D8 /* TextInputFieldView.swift in Sources */,
 				C91B699B1E26C74D00B2CB9F /* UserTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,7 +10,10 @@ class YachtTableViewCell: UITableViewCell, UIReusable {
   func loadItem(_ model: YachtRowViewData ) {
     titleLabel.text = model.title
     descriptionLabel.text = model.architect
-    downloadImage(model.imageURL)
+    if let url = URL(string: model.imageURL) {
+      downloadImage(url)
+    }
+
   }
 
   override func awakeFromNib() {

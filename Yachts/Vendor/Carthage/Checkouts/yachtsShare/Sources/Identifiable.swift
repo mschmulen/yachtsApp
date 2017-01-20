@@ -1,4 +1,6 @@
 
+import SwiftyJSON
+
 public typealias Identifier = String
 
 public protocol Identifiable: Hashable {

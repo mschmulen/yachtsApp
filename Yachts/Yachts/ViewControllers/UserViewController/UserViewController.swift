@@ -15,13 +15,13 @@ public struct UserViewData : UIViewDataProtocol {
 public struct UserRowViewData : UIViewDataProtocol {
 
   let title:String
-  let imageURL:URL
+  let imageURL:String
   let email:String
 
   static var empty: UserRowViewData {
     return UserRowViewData(
       title:"~",
-      imageURL:URL(string: "http://img00.deviantart.net/0fbb/i/2012/362/0/8/sail_boat_png___by_alzstock-d5pgl04.png")!,
+      imageURL:"http://img00.deviantart.net/0fbb/i/2012/362/0/8/sail_boat_png___by_alzstock-d5pgl04.png",
       email:"~"
     )
   }
