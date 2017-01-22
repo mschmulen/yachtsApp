@@ -9,7 +9,7 @@ public class UserViewModel {
   private let endpoint = "http://127.0.0.1:8090/users/"
 
   private var lastSearchString = ""
-  private var models: [User] = []
+  private var models: [ModelUser] = []
 
   private var providerObserver: Disposable?
   public let viewData: MutableProperty<UserViewData> = MutableProperty(.empty)
@@ -30,7 +30,7 @@ public class UserViewModel {
           for record in jsonResult {
 
             let anyDictionary = record as Any
-            let model = User(object: anyDictionary)
+            let model = ModelUser(object: anyDictionary)
             //User.deserialize(dictionary: record)
             self.models.append(model)
           }

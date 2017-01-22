@@ -1,14 +1,17 @@
-//
-//  Yacht.swift
-//
-//  Created by Matt Schmulen on 1/20/17
-//  Copyright (c) __MyCompanyName__. All rights reserved.
-//
 
 import Foundation
 import SwiftyJSON
 
-public struct Yacht {
+public struct ModelYacht {
+
+  public static let keys = [
+    "imageURL",
+    "architect",
+    "name",
+    "id",
+    "likes",
+    "url"
+  ]
 
   // MARK: Declaration for string constants to be used to decode and also serialize.
   private struct SerializationKeys {

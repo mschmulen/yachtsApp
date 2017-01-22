@@ -9,7 +9,7 @@ public class YachtViewModel {
   internal let endpointModelRoot = "http://127.0.0.1:8090/yachts/"
 
   private var lastSearchString = ""
-  internal var models: [Yacht] = []
+  internal var models: [ModelYacht] = []
 
   private var providerObserver: Disposable?
   public let viewData: MutableProperty<YachtViewData> = MutableProperty(.empty)
@@ -78,7 +78,7 @@ extension YachtViewModel {
           if let jsonResult = data as? Array<Dictionary<String,Any>> {
             for record in jsonResult {
               let anyDictionary = record as Any
-              let model = Yacht(object: anyDictionary)
+              let model = ModelYacht(object: anyDictionary)
               //User.deserialize(dictionary: record)
               self.models.append(model)
             }
@@ -112,7 +112,7 @@ extension YachtViewModel {
   }
   
   // router.post("/yachts", handler: yachtService.postCreate) // rename postCreate
-  public func postCreate(model:Yacht) {
+  public func postCreate(model:ModelYacht) {
 
     // MAS TODO move to shared
     let parameters = [

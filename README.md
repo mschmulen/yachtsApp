@@ -17,9 +17,8 @@ Currently the application is expecting the companion server to be running on loc
 
 ###Workflow
 
-When Share code is updated [git@github.com:mschmulen/yachtsShare.git](git@github.com:mschmulen/yachtsShare.git) bump the version `github "mschmulen/yachtsShare" == 0.0.5` in the Yachts/Vendor/Cartfile and update the dependencies `carthage update --no-build`.
+1. When Share code is updated [git@github.com:mschmulen/yachtsShare.git](git@github.com:mschmulen/yachtsShare.git) bump the version `github "mschmulen/yachtsShare" == 0.0.5` in the Yachts/Vendor/Cartfile and update the dependencies
 
-
-udpate carthage deps with `carthage update --no-build`
+1. Update carthage deps with `carthage update --no-build` from the `yachtsApp/Yachts/Vendor` folder
  
 

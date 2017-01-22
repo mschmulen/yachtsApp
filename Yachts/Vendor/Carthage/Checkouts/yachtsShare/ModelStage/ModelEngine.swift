@@ -1,26 +1,24 @@
-//
-//  Architect.swift
-//
-//  Created by Matt Schmulen on 1/20/17
-//  Copyright (c) __MyCompanyName__. All rights reserved.
-//
 
 import Foundation
 import SwiftyJSON
 
-public struct Architect {
+public struct ModelEngine {
+
+  public static let keys = [
+    "id",
+    "name"
+  ]
+
 
   // MARK: Declaration for string constants to be used to decode and also serialize.
   private struct SerializationKeys {
     static let id = "id"
     static let name = "name"
-    static let url = "url"
   }
 
   // MARK: Properties
   public var id: String?
   public var name: String?
-  public var url: String?
 
   // MARK: SwiftyJSON Initializers
   /// Initiates the instance based on the object.
@@ -37,7 +35,6 @@ public struct Architect {
   public init(json: JSON) {
     id = json[SerializationKeys.id].string
     name = json[SerializationKeys.name].string
-    url = json[SerializationKeys.url].string
   }
 
   /// Generates description of the object in the form of a NSDictionary.
@@ -47,7 +44,6 @@ public struct Architect {
     var dictionary: [String: Any] = [:]
     if let value = id { dictionary[SerializationKeys.id] = value }
     if let value = name { dictionary[SerializationKeys.name] = value }
-    if let value = url { dictionary[SerializationKeys.url] = value }
     return dictionary
   }
 

@@ -4,7 +4,7 @@ import UIKit
 class YachtNewViewController: UIViewController {
 
   var back: (() -> Void)?
-  var save: ((Yacht) -> Void)?
+  var save: ((ModelYacht) -> Void)?
   var cancel: (() -> Void)?
 
   @IBAction func actionSave(_ sender: Any) {
@@ -25,7 +25,7 @@ class YachtNewViewController: UIViewController {
       "imageURL": "https://s-media-cache-ak0.pinimg.com/236x/e5/62/f2/e562f2ca779b4cdb50f10f97bd3c8b4b.jpg",
     ]
 
-    let m = Yacht(object:dictionary)
+    let m = ModelYacht(object:dictionary)
     //    save?(m)
   }
 

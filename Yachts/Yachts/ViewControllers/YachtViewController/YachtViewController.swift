@@ -37,7 +37,7 @@ class YachtViewController: UIViewController , UIViewDataObserving {
   var selectModelWith: ((Identifier) -> Void)?
   var deleteModelWith: ((Identifier) -> Void)?
   var refresh: (()->Void)?
-  var save: ((Yacht) -> Void)?
+  var save: ((ModelYacht) -> Void)?
 
   @IBOutlet weak var searchView: UIView! {
     didSet {
